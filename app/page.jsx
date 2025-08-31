@@ -22,7 +22,7 @@ export default function Home() {
           {/* Section Title */}
           <div className="text-center mb-16">
             <h2 className="font-['Be_Vietnam_Pro'] font-semibold text-[#05325f] text-[46.6px]">
-              Hot Services (Ft. Funding)
+              Achieving Business Growth
             </h2>
           </div>
         </div>

@@ -175,22 +175,19 @@ export default function Footer() {
 
       {/* Bottom Features */}
       <div className="bg-[#3278bd] border-t border-[#3278bd]">
-        <div
-          className="container mx-auto px-6 py-6"
-          style={{ maxWidth: "1200px" }}
-        >
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-sm text-white">
+        <div className="container mx-auto px-4 py-4 md:py-6" style={{ maxWidth: "1200px" }}>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-sm text-white">
             <div className="flex items-center">
-              <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-              Founder-First Approach
+              <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+              <span className="text-center md:text-left">Founder-First Approach</span>
             </div>
             <div className="flex items-center">
-              <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-              Speed + Simplicity
+              <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+              <span className="text-center md:text-left">Speed + Simplicity</span>
             </div>
             <div className="flex items-center">
-              <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-              Expert-Led Solutions
+              <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+              <span className="text-center md:text-left">Expert-Led Solutions</span>
             </div>
           </div>
         </div>
