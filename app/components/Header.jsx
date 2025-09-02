@@ -47,13 +47,15 @@ export const Header = () => {
             : "px-4 sm:px-6 lg:px-16 pt-6 sm:pt-8 lg:pt-10"
         }`}
       >
-        <Image
-          className="w-32 sm:w-40 lg:w-56 h-auto object-contain"
-          alt="Hiring instagram"
-          src="https://c.animaapp.com/metmcazsfuMR7v/img/hiring-instagram-post--2--2.png"
-          width={248}
-          height={49}
-        />
+        <a href="/">
+          <Image
+            className="w-32 sm:w-40 lg:w-56 h-auto object-contain"
+            alt="Hiring instagram"
+            src="https://c.animaapp.com/metmcazsfuMR7v/img/hiring-instagram-post--2--2.png"
+            width={248}
+            height={49}
+          />
+        </a>
 
         <nav
           className={`hidden md:block absolute  left-1/2 transform -translate-x-1/2 z-20  ${
@@ -105,9 +107,13 @@ export const Header = () => {
           )}
         </button>
 
-        <button className="hidden md:block bg-[#264c92] px-6 py-2 rounded-xl text-white text-xl font-medium hover:bg-[#264c92]/90 transition-colors">
+        <a
+          href="/contact"
+          className={`hidden md:block bg-[#264c92] px-6 py-2 rounded-xl text-white text-xl font-medium hover:bg-[#264c92]/90 transition-colors
+    ${scrolled ? "border border-white" : ""}`}
+        >
           Let's Transform
-        </button>
+        </a>
       </div>
 
       {isMobileMenuOpen && (

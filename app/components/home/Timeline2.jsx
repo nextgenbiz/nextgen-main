@@ -50,7 +50,7 @@ export default function Timeline2() {
     <section className="w-full bg-[linear-gradient(180deg,rgba(232,244,255,1)_0%,rgba(232,244,255,1)_100%)] py-20 px-0">
       <div className="mx-auto relative">
         {/* Header */}
-        <div className="text-center  md:mb-10">
+        <div className="text-center  mb-10">
           <h2 className="max-w-7xl mx-auto  font-semibold text-[#05325f] text-[30px] md:text-[47.5px] leading-normal">
             From Spark to Motion — The Next-Gen Way:
           </h2>
@@ -73,7 +73,7 @@ export default function Timeline2() {
                 className="relative mt-1 md:mt-6 w-full flex items-center gap-4 px-4 md:gap-8 md:px-20 py-3 md:py-3 rounded-lg shadow-lg bg-white mb-5 md:mb-20"
                 style={{
                   backgroundImage: `url(${timeline.src})`,
-                  backgroundSize: "contain",
+                  backgroundSize: "cover",
                   backgroundRepeat: "repeat",
                 }}
               >

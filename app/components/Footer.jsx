@@ -27,7 +27,7 @@ export default function Footer() {
       </div>
 
       {/* Navigation and Social Section */}
-      <div className="border-t border-[#3278bd]">
+      <div className="border-t border-[#245589]">
         <div className="container mx-auto px-6 py-12 max-w-7xl">
           <div className="flex flex-col md:flex-row items-center justify-between">
             {/* Logo */}
@@ -48,7 +48,7 @@ export default function Footer() {
               <ul className="flex flex-wrap justify-center gap-8 text-sm">
                 <li>
                   <a
-                    href="#"
+                    href="/about"
                     className="text-white hover:text-white transition-colors"
                   >
                     Who we are
@@ -56,7 +56,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/solution"
                     className="text-white hover:text-white transition-colors"
                   >
                     Solutions
@@ -64,7 +64,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/contact"
                     className="text-white hover:text-white transition-colors"
                   >
                     Connect
@@ -76,8 +76,10 @@ export default function Footer() {
             {/* Social Icons */}
             <div className="flex gap-4">
               <a
-                href="#"
-                className="w-10 h-10 bg-[#1c4268] hover:bg-[#1c4268] rounded-full flex items-center justify-center transition-colors border-2 border-blue-400"
+                href="https://in.linkedin.com/company/nextgen-business-consultancy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-[#1c4268] hover:bg-[#1c4268] rounded-full flex items-center justify-center transition-colors border-2 border-[#245589]"
               >
                 <svg
                   className="w-5 h-5 text-white"
@@ -88,8 +90,9 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
-                className="w-10 h-10 bg-[#1c4268] hover:bg-[#1c4268] rounded-full flex items-center justify-center transition-colors border-2 border-blue-400"
+                href="https://www.facebook.com/p/Next-Gen-Business-Consultancy-Private-Limited-61574060610065/"
+                target="_blank"
+                className="w-10 h-10 bg-[#1c4268] hover:bg-[#1c4268] rounded-full flex items-center justify-center transition-colors border-2 border-[#245589]"
               >
                 <svg
                   className="w-5 h-5 text-white"
@@ -100,20 +103,28 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
-                className="w-10 h-10 bg-[#1c4268] hover:bg-[#1c4268] rounded-full flex items-center justify-center transition-colors border-2 border-blue-400"
+                href="https://www.instagram.com/next_gen_business_consultancy/"
+                target="_blank"
+                className="w-10 h-10 bg-[#1c4268] hover:bg-[#1c4268] rounded-full flex items-center justify-center transition-colors border-2 border-[#245589]"
               >
                 <svg
                   className="w-5 h-5 text-white"
                   viewBox="0 0 24 24"
-                  fill="currentColor"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
-                  <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-5.523-4.477-10-10-10zm3.7 14.077c-1.75.362-5.453.362-7.203 0-1.896-.391-2.117-1.538-2.246-2.077-.02-.086-.029-.176-.029-.265v-2.97c0-.182.108-.35.27-.431l2.5-1.423c.094-.054.204-.054.298 0l2.5 1.423c.161.081.27.25.27.431v2.97c0 .089-.01.179-.03.265-.056.244-.172.642-1.017.898.26.432.908 1.01 1.746 1.45 1.28.677 2.953.77 3.787.77.403 0 .735-.03.894-.06l-.002-.007c.396-.1.683-.362.79-.67.108-.307.027-.625-.003-.723l-.012-.03c-.063-.15-.154-.36-.275-.62-.777.172-1.16.172-1.587.133-.428-.04-.953-.112-1.744-.445-.33-.14-.64-.317-.925-.527.708-.067 1.275-.23 1.275-.23s-1.754-.41-1.754-1.925v-1.65c0-1.516 1.754-1.925 1.754-1.925s.94-.294 2.45-.294 2.45.294 2.45.294 1.754.41 1.754 1.925v1.65c0 1.515-1.754 1.925-1.754 1.925s-.567.163-1.275.23c.285.21.595.387.925.527.79.333 1.316.405 1.744.445.427.04.81.04 1.587-.133-.12.26-.212.47-.275.62l-.012.03c-.03.098-.111.416-.003.723.108.308.394.57.79.67l-.002.007c.16.03.49.06.894.06.834 0 2.507-.093 3.787-.77.838-.44 1.486-1.018 1.746-1.45-.845-.256-.96-.654-1.017-.898-.02-.086-.03-.176-.03-.265v-2.97c0-.182.108-.35.27-.431l2.5-1.423c.094-.054.204-.054.298 0l2.5 1.423c.161.081.27.25.27.431v2.97c0 .089-.01.179-.03.265-.129.539-.35 1.686-2.246 2.077z" />
+                  <rect x="3" y="3" width="18" height="18" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <circle cx="17.5" cy="6.5" r="1.5" />
                 </svg>
               </a>
               <a
-                href="#"
-                className="w-10 h-10 bg-[#1c4268] hover:bg-[#1c4268] rounded-full flex items-center justify-center transition-colors border-2 border-blue-400"
+                href="https://www.youtube.com/@Next-Gen-business-consultancy"
+                target="_blank"
+                className="w-10 h-10 bg-[#1c4268] hover:bg-[#1c4268] rounded-full flex items-center justify-center transition-colors border-2 border-[#245589]"
               >
                 <svg
                   className="w-5 h-5 text-white"
@@ -129,7 +140,7 @@ export default function Footer() {
       </div>
 
       {/* Footer Bottom */}
-      <div className="border-t border-[#3278bd]">
+      <div className="border-t border-[#245589]">
         <div
           className="container mx-auto px-6 py-8"
           style={{ maxWidth: "1200px" }}
@@ -175,19 +186,22 @@ export default function Footer() {
 
       {/* Bottom Features */}
       <div className="bg-[#3278bd] border-t border-[#3278bd]">
-        <div className="container mx-auto px-4 py-4 md:py-6" style={{ maxWidth: "1200px" }}>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-sm text-white">
+        <div
+          className="container mx-auto px-4 py-4 md:py-6"
+          style={{ maxWidth: "1200px" }}
+        >
+          <div className="flex flex-row md:flex-row items-center justify-center gap-2 md:gap-8 text-sm text-white">
             <div className="flex items-center">
               <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
-              <span className="text-center md:text-left">Founder-First Approach</span>
+              <span className="text-sm text-left">Founder-First Approach</span>
             </div>
             <div className="flex items-center">
               <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
-              <span className="text-center md:text-left">Speed + Simplicity</span>
+              <span className=" text-left">Speed + Simplicity</span>
             </div>
             <div className="flex items-center">
               <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
-              <span className="text-center md:text-left">Expert-Led Solutions</span>
+              <span className=" text-left">Expert-Led Solutions</span>
             </div>
           </div>
         </div>

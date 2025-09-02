@@ -108,7 +108,7 @@ export const HotServicesSection = () => {
                 </p>
 
                 {/* Amount */}
-                <h1 className="bg-[linear-gradient(171deg,rgba(46,111,182,1)_0%,rgba(123,174,224,0.42)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] text-transparent font-['Bebas_Neue'] text-[60px] sm:text-[70px] md:text-[90.2px] leading-none">
+                <h1 className="bg-[linear-gradient(171deg,rgba(46,111,182,1)_0%,rgba(123,174,224,0.42)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] text-transparent font-['Bebas_Neue'] text-[60px] sm:text-[70px] md:text-[90.2px] leading-none bebas-neue-regular">
                   {service.amount}
                 </h1>
 

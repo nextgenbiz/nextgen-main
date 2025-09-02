@@ -9,8 +9,8 @@ import group239 from "../../assets/239.png";
 import group244 from "../../assets/244.png";
 import vector2 from "../../assets/Vector.svg";
 
-const BASE_WIDTH = 1408;   // original design width (max left + width)
-const BASE_HEIGHT = 1239;  // original design height
+const BASE_WIDTH = 1408; // original design width (max left + width)
+const BASE_HEIGHT = 1239; // original design height
 
 const Box = () => {
   const [scale, setScale] = useState(1);
@@ -29,7 +29,7 @@ const Box = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[110vh] overflow-hidden ">
+    <div className="relative w-full h-[60vh] md:h-[110vh] overflow-hidden ">
       {/* Scaled canvas: anchored to top-center, exact pixels inside */}
       <div
         className="absolute left-1/2 top-0"
@@ -43,8 +43,7 @@ const Box = () => {
         {/* === YOUR ORIGINAL MARKUP BELOW (unchanged) === */}
         <div className="relative w-full h-[1239px] ">
           <div className=" max-w-7xl mx-auto">
-             {/* Section Title */}
-           
+            {/* Section Title */}
 
             <div className="absolute w-[1404px] h-[1123px] top-[116px]">
               <div className="absolute w-[1408px] h-[1031px] top-[92px] mx-auto left-0">
@@ -62,8 +61,8 @@ const Box = () => {
                   </div>
 
                   <p className="absolute w-[358px] top-[43px] left-0 [font-family:'Be_Vietnam_Pro-Regular',Helvetica] font-normal text-[#46484f] text-[17.9px] tracking-[0] leading-[normal]">
-                    Marketing aur growth strategies jo sirf dikhaye nahi — market
-                    mein raj karein. <br />
+                    Marketing aur growth strategies jo sirf dikhaye nahi —
+                    market mein raj karein. <br />
                     Aapka brand banega recognizable aur unstoppable.
                   </p>
                 </div>

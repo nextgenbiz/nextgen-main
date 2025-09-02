@@ -25,13 +25,14 @@ const features = [
 function FeatureCard({ title, description, isActive, onClick }) {
   return (
     <div 
-      className={`relative w-[300px] h-[300px] bg-gradient-to-b from-[#76a5d3] to-[#ebf2f8] rounded-[15px] overflow-hidden shadow-lg p-6 border border-gray-300 transition-all duration-300 cursor-pointer ${
+      className={`relative w-[300px] h-[300px] bg-[#b4cce6] rounded-[15px] overflow-hidden shadow-lg p-6 border border-gray-400 transition-all duration-300 cursor-pointer ${
         isActive ? "scale-105 shadow-xl border-blue-500" : "hover:scale-102"
       }`}
       onClick={onClick}
     >
       <div className="relative w-full h-full flex flex-col justify-center">
-        <h3 className="font-bold text-[#1c4268] text-xl mb-4 text-left">
+        <h3 className="font-sans-Neo Grotesque  font-extrabold text-blue-900 text-xl mb-4 text-left">
+          {/* <h3 className="font-serif - roun  font-extrabold text-blue-900 text-xl mb-4 text-left"> */}
           {title}
         </h3>
         <p className="text-gray-600 text-sm leading-relaxed text-left">
@@ -53,8 +54,9 @@ function Services() {
     <>
       <section className="w-full relative py-10 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex flex-col items-center justify-center text-center">
-            <h2 className="text-4xl font-bold text-[#1c4268] mb-4">About</h2>
+          <div className="text-center  mb-10">
+            <h2 className="max-w-7xl mx-auto  font-semibold text-[#05325f] text-[30px] md:text-[47.5px] leading-normal">
+            About</h2>
             <div className="flex justify-center">
               <Image
                 className="bg-white p-2 rounded-lg object-contain"

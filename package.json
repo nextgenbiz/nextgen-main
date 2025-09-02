@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    
     "@types/node": "20.6.2",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
@@ -18,6 +17,7 @@
     "eslint-config-next": "13.5.1",
     "lucide-react": "^0.542.0",
     "next": "^13.5.11",
+    "nodemailer": "^7.0.6",
     "postcss": "8.4.30",
     "react": "18.2.0",
     "react-dom": "18.2.0",

@@ -31,8 +31,8 @@ function Timeline() {
     <section className="w-full bg-white py-16 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#2c5282] leading-tight">
+        <div className="text-center  mb-10">
+            <h2 className="max-w-7xl mx-auto  font-semibold text-[#05325f] text-[30px] md:text-[47.5px] leading-normal">
             Next-Gen Business Consultancy's Journey to Leadership
           </h2>
         </div>

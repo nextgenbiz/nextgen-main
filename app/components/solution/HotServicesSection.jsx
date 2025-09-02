@@ -101,14 +101,14 @@ export const HotServicesSection = () => {
               />
 
               {/* Text Content */}
-              <div className="flex flex-col justify-center items-center mt-16 sm:mt-18 md:mt-20 z-10 px-2">
+              <div className="flex flex-col justify-center items-center mt-10 sm:mt-18 md:mt-20 z-10 px-2">
                 {/* UP TO */}
                 <p className="font-['Bayon'] font-normal text-[#264c92] text-xl sm:text-2xl md:text-3xl">
                   UP TO
                 </p>
 
                 {/* Amount */}
-                <h1 className="bg-[linear-gradient(171deg,rgba(46,111,182,1)_0%,rgba(123,174,224,0.42)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] text-transparent font-['Bebas_Neue'] text-[60px] sm:text-[70px] md:text-[90.2px] leading-none">
+                <h1 className="bebas-neue-regular bg-[linear-gradient(171deg,rgba(46,111,182,1)_0%,rgba(123,174,224,0.42)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] text-transparent font-['Bebas_Neue'] text-[60px] sm:text-[70px] md:text-[90.2px] leading-none">
                   {service.amount}
                 </h1>
 
@@ -145,14 +145,14 @@ export const HotServicesSection = () => {
         </div>
 
         {/* View All Link */}
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <button className="flex items-center gap-2 h-auto p-0 hover:bg-transparent">
             <span className="font-['Chivo'] font-medium text-[#03518f] text-lg sm:text-xl md:text-[24.9px] tracking-[-0.50px]">
               View all
             </span>
             <ChevronRightIcon className="w-[11px] sm:w-[12px] md:w-[13px] h-[16px] sm:h-[18px] md:h-[19px] text-[#03518f]" />
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

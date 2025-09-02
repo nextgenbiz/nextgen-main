@@ -19,9 +19,9 @@ export default function Home() {
 
       <section className="w-full pt-16 px-4 ">
         <div className="max-w-7xl mx-auto">
-          {/* Section Title */}
-          <div className="text-center mb-16">
-            <h2 className="font-['Be_Vietnam_Pro'] font-semibold text-[#05325f] text-[46.6px]">
+          {/* Header */}
+          <div className="text-center  mb-10">
+            <h2 className="max-w-7xl mx-auto  font-semibold text-[#05325f] text-[30px] md:text-[47.5px] leading-normal">
               Achieving Business Growth
             </h2>
           </div>

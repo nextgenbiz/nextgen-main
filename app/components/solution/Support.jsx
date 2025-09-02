@@ -101,15 +101,15 @@ function Support() {
       <section className="w-full bg-gradient-to-b from-[#e8f4ff] to-[#e8f4ff] py-12 md:py-20 px-4">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
-          <div className="flex flex-col items-center justify-center text-center mb-8 md:mb-12">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1c4268] mb-6">
+          <div className="text-center  mb-10">
+          {/* <h2 className="max-w-7xl mx-auto  font-semibold text-[#05325f] text-[30px] md:text-[47.5px] leading-normal">
               Business Support Services
-            </h2>
+            </h2> */}
             
             {/* Filter Pills - Responsive */}
             <div className="inline-flex flex-wrap items-center justify-center gap-2 md:gap-3 p-2 md:p-3 bg-white rounded-lg shadow-lg border border-gray-200 w-full max-w-4xl">
             
-  
+
               <button 
                 className={`flex items-center gap-2 px-3 py-2 md:px-4 md:py-2 rounded-lg border flex-shrink-0 transition-all ${
                   activeFilter === "registration" 
