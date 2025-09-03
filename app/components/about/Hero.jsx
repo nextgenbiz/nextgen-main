@@ -52,12 +52,12 @@ export default function Hero() {
         </div>
 
         {/* About Image */}
-        <div className="flex w-full justify-center items-center z-10 lg:w-1/2 px-4 sm:px-6 md:px-8 lg:px-0">
+        <div className="bg-white p-6 rounded-md shadow-2xl w-full max-w-[500px] h-[350px] flex items-center justify-center">
           <Image
-            className="bg-white p-3 sm:p-6 rounded-lg shadow-2xl object-contain w-full max-w-[400px] h-auto"
+            className="object-contain w-full h-full"
             alt="Group"
             src={about}
-            width={500}
+            width={600}
             height={300}
             priority
           />
