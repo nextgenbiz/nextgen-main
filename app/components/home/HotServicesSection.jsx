@@ -1,7 +1,11 @@
-import { ChevronRightIcon } from "lucide-react";
 import React from "react";
-import Collateralfree from "../../assets/hotservice1.svg";
 import Image from "next/image";
+import Collateralfree from "../../assets/hotservice1.png";
+import Naiff from "../../assets/hotservice2.png";
+import SeedFund from "../../assets/hotservice3.png";
+import GrantFund from "../../assets/hotservice4.png";
+import StartupSeed from "../../assets/hotservice5.png";
+import Pmegp from "../../assets/hotservice6.png";
 
 export const HotServicesSection = () => {
   const services = [
@@ -10,66 +14,42 @@ export const HotServicesSection = () => {
       title: "Collateral Free Loans",
       backgroundImage:
         "https://c.animaapp.com/metmcazsfuMR7v/img/rectangle-98.svg",
-      iconImages: {
-        src: Collateralfree,
-        className:
-          "absolute w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] md:w-[100px] md:h-[100px] top-[-20px]  md:top-[-10px] left-1/2 transform -translate-x-1/2", // Responsive icon positioning
-      },
+      icon: Collateralfree,
     },
     {
       amount: "₹2 cr",
       title: "NAIFF Loans",
       backgroundImage:
         "https://c.animaapp.com/metmcazsfuMR7v/img/rectangle-98.svg",
-      iconImages: {
-        src: Collateralfree,
-        className:
-          "absolute w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] md:w-[100px] md:h-[100px] top-[-20px]  md:top-[-10px] left-1/2 transform -translate-x-1/2",
-      },
+      icon: Naiff,
     },
     {
-      amount: "₹50 l",
+      amount: "₹50 L",
       title: "Seed fund",
       backgroundImage:
         "https://c.animaapp.com/metmcazsfuMR7v/img/rectangle-98.svg",
-      iconImages: {
-        src: Collateralfree,
-        className:
-          "absolute w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] md:w-[100px] md:h-[100px] top-[-20px]  md:top-[-10px] left-1/2 transform -translate-x-1/2",
-      },
+      icon: SeedFund,
     },
     {
       amount: "₹10 cr",
       title: "Grant fund",
       backgroundImage:
         "https://c.animaapp.com/metmcazsfuMR7v/img/rectangle-98.svg",
-      iconImages: {
-        src: Collateralfree,
-        className:
-          "absolute w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] md:w-[100px] md:h-[100px] top-[-20px]  md:top-[-10px] left-1/2 transform -translate-x-1/2",
-      },
+      icon: GrantFund,
     },
     {
       amount: "₹1 cr",
       title: "Startup Seed Support",
       backgroundImage:
         "https://c.animaapp.com/metmcazsfuMR7v/img/rectangle-98.svg",
-      iconImages: {
-        src: Collateralfree,
-        className:
-          "absolute w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] md:w-[100px] md:h-[100px] top-[-20px]  md:top-[-10px] left-1/2 transform -translate-x-1/2",
-      },
+      icon: StartupSeed,
     },
     {
       amount: "₹50 L",
       title: "PMEGP",
       backgroundImage:
         "https://c.animaapp.com/metmcazsfuMR7v/img/rectangle-98.svg",
-      iconImages: {
-        src: Collateralfree,
-        className:
-          "absolute w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] md:w-[100px] md:h-[100px] top-[-20px]  md:top-[-10px] left-1/2 transform -translate-x-1/2",
-      },
+      icon: Pmegp,
     },
   ];
 
@@ -88,70 +68,48 @@ export const HotServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="relative w-full  mx-auto h-[320px] sm:h-[350px] md:h-[403px] flex flex-col items-center bg-contain bg-no-repeat bg-center"
+              className="relative w-full max-w-[350px] mx-auto h-[320px] sm:h-[350px] md:h-[403px] flex flex-col items-center bg-contain bg-no-repeat bg-center"
               style={{ backgroundImage: `url(${service.backgroundImage})` }}
             >
               {/* Icon */}
               <Image
-                className={service.iconImages.className}
-                alt="Service icon"
-                src={service.iconImages.src}
-                width={80}
-                height={80}
+                src={service.icon}
+                alt="Service Icon"
+                width={70}
+                height={70}
+                className="absolute w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] md:w-[90px] md:h-[90px] left-1/2 transform -translate-x-1/2"
               />
 
               {/* Text Content */}
-              <div className="flex flex-col justify-center items-center mt-16 sm:mt-18 md:mt-20 z-10 px-2">
-                {/* UP TO */}
+              <div className="flex flex-col justify-center items-center mt-14 sm:mt-20 md:mt-24 z-10 px-2">
                 <p className="font-['Bayon'] font-normal text-[#264c92] text-xl sm:text-2xl md:text-3xl">
                   UP TO
                 </p>
-
-                {/* Amount */}
-                <h1 className="bg-[linear-gradient(171deg,rgba(46,111,182,1)_0%,rgba(123,174,224,0.42)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] text-transparent font-['Bebas_Neue'] text-[60px] sm:text-[70px] md:text-[90.2px] leading-none bebas-neue-regular">
+                <h1 className="bebas-neue-regular bg-[linear-gradient(171deg,rgba(46,111,182,1)_0%,rgba(123,174,224,0.42)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] text-transparent font-['Bebas_Neue'] text-[60px] sm:text-[70px] md:text-[90px] leading-none">
                   {service.amount}
                 </h1>
-
-                {/* Title */}
                 <h3 className="text-center font-['Be_Vietnam'] font-medium text-[#46484f] text-lg sm:text-xl md:text-2xl mt-2 px-2">
                   {service.title}
                 </h3>
 
-                {/* Button */}
-                <button className="mt-4 md:mt-6 w-full max-w-[220px] h-[40px] sm:h-[45px] md:h-[51px] rounded-[5.56px] bg-[linear-gradient(180deg,rgba(58,128,193,1)_0%)] hover:bg-[linear-gradient(180deg,rgba(48,118,183,1)_0%)] border-none flex items-center justify-center">
-                  <span className="font-['Be_Vietnam'] font-normal text-white text-lg sm:text-xl md:text-[29.4px]">
+                <button className="mt-4 md:mt-6 w-[220px] h-[45px] md:h-[51px] rounded-md bg-[#3a80c1] hover:bg-[#3076b7] border-none flex items-center justify-center transition">
+                  <span className="font-['Be_Vietnam'] font-normal text-white text-lg sm:text-xl md:text-[22px] flex items-center">
                     Avail now
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="ml-2 w-5 h-5 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
                   </span>
-                  <div className="ml-2 sm:ml-3 md:ml-4 flex items-center">
-                    <Image
-                      className="w-[20px] sm:w-[25px] md:w-[31px] h-0.5"
-                      width={31}
-                      height={2}
-                      alt="Arrow line"
-                      src="https://c.animaapp.com/metmcazsfuMR7v/img/vector-8.svg"
-                    />
-                    <Image
-                      className="w-[8px] sm:w-[10px] md:w-[11px] h-[12px] sm:h-[15px] md:h-[17px] ml-0.5 sm:ml-1"
-                      width={11}
-                      height={17}
-                      alt="Arrow head"
-                      src="https://c.animaapp.com/metmcazsfuMR7v/img/vector-11.svg"
-                    />
-                  </div>
                 </button>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* View All Link */}
-        <div className="flex justify-center">
-          <button className="flex items-center gap-2 h-auto p-0 hover:bg-transparent">
-            <span className="font-['Chivo'] font-medium text-[#03518f] text-lg sm:text-xl md:text-[24.9px] tracking-[-0.50px]">
-              View all
-            </span>
-            <ChevronRightIcon className="w-[11px] sm:w-[12px] md:w-[13px] h-[16px] sm:h-[18px] md:h-[19px] text-[#03518f]" />
-          </button>
         </div>
       </div>
     </section>

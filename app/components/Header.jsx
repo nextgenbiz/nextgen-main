@@ -75,7 +75,7 @@ export const Header = () => {
                     </NavigationMenuLink>
                   </NavigationMenuItem>
                 ))}
-                <NavigationMenuItem>
+                {/* <NavigationMenuItem>
                   <NavigationMenuTrigger className="font-['Inter'] font-normal text-white text-[19px] bg-transparent hover:bg-transparent focus:bg-transparent data-[active]:bg-transparent data-[state=open]:bg-transparent">
                     More
                     <ChevronDownIcon className="ml-2 h-3 w-3" />
@@ -90,7 +90,7 @@ export const Header = () => {
                       </NavigationMenuLink>
                     </div>
                   </NavigationMenuContent>
-                </NavigationMenuItem>
+                </NavigationMenuItem> */}
               </NavigationMenuList>
             </NavigationMenu>
           </div>

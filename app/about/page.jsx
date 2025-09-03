@@ -8,7 +8,6 @@ import Impact from "../components/about/Impact";
 import CTA from "../components/about/CTA";
 import Footer from "../components/Footer";
 import "./page.css";
-// import Box from "./components/about/Box";
 export default function About() {
   return (
     <>

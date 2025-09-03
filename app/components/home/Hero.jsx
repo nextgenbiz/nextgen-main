@@ -14,13 +14,13 @@ export default function Hero() {
       />
 
       {/* Background overlay */}
-      <Image
+      {/* <Image
         className="absolute right-0 top-0 w-1/2 h-full object-contain"
         alt="Rectangle"
         src="https://c.animaapp.com/metmcazsfuMR7v/img/rectangle-85.svg"
         width={912}
         height={914}
-      />
+      /> */}
 
       {/* Header Row */}
       {/* <div className="relative flex justify-between items-center px-6 sm:px-10 lg:px-16 pt-10">
