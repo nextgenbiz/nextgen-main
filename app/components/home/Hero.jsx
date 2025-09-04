@@ -1,44 +1,29 @@
 import Image from "next/image";
+import Hero_Banner from "../../assets/Hero _Banner.webp";
 
 export default function Hero() {
   return (
     <section className="relative w-full min-h-screen overflow-hidden flex flex-col pt-20 md:pt-2">
+      {/* Background Image */}
+      <Image
+        src={Hero_Banner}
+        alt="Hero Banner"
+        fill
+        priority
+        className="absolute inset-0 w-full h-full object-cover"
+      />
       {/* Background Stripes */}
-      <div
+      {/* <div
         className="absolute inset-0"
         style={{
           backgroundImage:
             "url('https://c.animaapp.com/metmcazsfuMR7v/img/rectangle-64.svg')",
           backgroundRepeat: "repeat-x",
         }}
-      />
-
-      {/* Background overlay */}
-      {/* <Image
-        className="absolute right-0 top-0 w-1/2 h-full object-contain"
-        alt="Rectangle"
-        src="https://c.animaapp.com/metmcazsfuMR7v/img/rectangle-85.svg"
-        width={912}
-        height={914}
       /> */}
 
-      {/* Header Row */}
-      {/* <div className="relative flex justify-between items-center px-6 sm:px-10 lg:px-16 pt-10">
-        <Image
-          className="w-40 sm:w-56 h-auto object-contain"
-          alt="Hiring instagram"
-          src="https://c.animaapp.com/metmcazsfuMR7v/img/hiring-instagram-post--2--2.png"
-          width={248}
-          height={49}
-        />
-
-        <button className="bg-[#264c92] px-6 py-2 rounded-xl text-white text-lg sm:text-xl font-medium hover:bg-[#264c92]/90">
-          Let's Transform
-        </button>
-      </div> */}
-
       {/* Content */}
-      <div className="relative flex flex-col   mt-10 gap-6 max-w-7xl min-h-screen justify-end px-6 sm:px-10 lg:px-20 pb-20">
+      <div className="relative flex flex-col mt-10 gap-6 max-w-7xl min-h-screen justify-end px-6 sm:px-10 lg:px-20 pb-20">
         {/* Growth Partner Badge */}
         <div className="flex items-center justify-between bg-[#264c9280] border border-white/20 backdrop-blur rounded-lg px-4 py-2 w-full max-w-xl">
           <span className="text-white text-xl sm:text-2xl font-medium">
@@ -52,13 +37,13 @@ export default function Hero() {
         </div>
 
         {/* Heading */}
-        <h1 className="text-white text-3xl sm:text-5xl lg:text-6xl font-semibold leading-snug">
+        <h1 className="text-white text-3xl sm:text-5xl lg:text-6xl font-semibold leading-snug text-center md:text-left">
           Your Vision, Our Execution.
           <br /> Zero Obstacles.
         </h1>
 
         {/* Description */}
-        <p className="text-white text-base sm:text-lg lg:text-xl max-w-3xl">
+        <p className="text-white text-base sm:text-lg lg:text-xl leading-relaxed tracking-wide text-center md:text-left whitespace-normal md:whitespace-nowrap">
           Business is not a journey, it's an expedition. Every obstacle ek pahad
           hai, every win ek nayi duniya. <br />
           We're not here to advise; hum hain aapke saath legends & legacies
@@ -72,7 +57,7 @@ export default function Hero() {
               Bold Vision
             </span>
             <Image
-              alt="Eye "
+              alt="Eye"
               className="w-[50px] h-[50px] md:w-[80px] md:h-[80px]"
               src="https://c.animaapp.com/metmcazsfuMR7v/img/eye-svgrepo-com-1.svg"
               width={80}
@@ -94,7 +79,7 @@ export default function Hero() {
           </div>
 
           <div className="flex items-center justify-between bg-[#264c9266] border border-white/20 backdrop-blur rounded-xl p-4">
-            <span className="text-white text-lg md:text-2xl  font-medium">
+            <span className="text-white text-lg md:text-2xl font-medium">
               Limitless Scale
             </span>
             <Image

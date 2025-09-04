@@ -24,15 +24,21 @@ const TestimonialsSlider = () => {
     ],
   };
 
-  const videos = ["CH8jBkQk-DI", "m9Quda1uOmo", "Ljt18uURvBc", "4pAlebkNPVg"];
+const videos = ["CH8jBkQk-DI", "m9Quda1uOmo", "Ljt18uURvBc", "4pAlebkNPVg"];
 
   return (
-    <div className="slider-container max-w-7xl mx-auto px-4 py-10">
+   <div className="bg-white">
+    <div className="text-center  mb-10">
+          <h2 className="max-w-7xl mx-auto  font-semibold text-[#05325f] text-[30px] md:text-[47.5px] leading-normal">
+            Real experiences, real voices
+          </h2>
+        </div>
+     <div className="slider-container max-w-7xl mx-auto px-4 py-10 bg-white">
       <Slider {...settings}>
         {videos.map((id, i) => (
           <div
             key={i}
-            className="relative cursor-pointer rounded-xl overflow-hidden shadow-lg bg-black h-[400px]"
+            className="relative cursor-pointer rounded-xl overflow-hidden shadow-lg bg-white h-[400px]"
             onClick={() => setSelectedVideo(id)}
           >
             {/* YouTube thumbnail */}
@@ -90,6 +96,8 @@ const TestimonialsSlider = () => {
         </div>
       )}
     </div>
+
+   </div>
   );
 };
 

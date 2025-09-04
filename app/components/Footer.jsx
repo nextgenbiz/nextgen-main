@@ -21,14 +21,14 @@ export default function Footer() {
           together.
         </p>
 
-        <button className="bg-gradient-to-b from-[#245586] to-[#76a5d3] text-white font-medium px-8 py-3 rounded-md transition-colors duration-300">
+        <button className="bg-gradient-to-b from-[#245586] to-[#76a5d3] text-white inter-font px-8 py-3 rounded-md transition-colors duration-300">
           Contact Us
         </button>
       </div>
 
       {/* Navigation and Social Section */}
-      <div className="border-t border-[#245589]">
-        <div className="container mx-auto px-6 py-12 max-w-7xl">
+      <div className="">
+        <div className="container mx-auto px-6 py-12 max-w-7xl border-t border-[#245589]">
           <div className="flex flex-col md:flex-row items-center justify-between">
             {/* Logo */}
             <div className="mb-8 md:mb-0">
@@ -140,10 +140,10 @@ export default function Footer() {
       </div>
 
       {/* Footer Bottom */}
-      <div className="border-t border-[#245589]">
+      <div className="">
         <div
-          className="container mx-auto px-6 py-8"
-          style={{ maxWidth: "1200px" }}
+          className="container mx-auto px-6 py-8 max-w-7xl border-t border-[#245589]"
+          
         >
           <div className="flex flex-col md:flex-row items-center justify-between text-sm text-white">
             <div className="mb-4 md:mb-0">

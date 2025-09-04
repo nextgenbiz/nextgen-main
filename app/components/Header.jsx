@@ -69,7 +69,7 @@ export const Header = () => {
                   <NavigationMenuItem key={item.label}>
                     <NavigationMenuLink
                       href={item.href}
-                      className="font-['Inter'] font-normal text-white text-[19px] hover:text-white/80 transition-colors"
+                      className="inter-font text-white text-[19px] hover:text-white/80 transition-colors"
                     >
                       {item.label}
                     </NavigationMenuLink>

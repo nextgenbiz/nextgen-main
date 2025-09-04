@@ -1,9 +1,17 @@
 import Image from "next/image";
 import solution1 from "../../assets/solution1.png";
+import Hero_Banner from "../../assets/Hero _Banner.webp";
 
 export default function Hero() {
   return (
     <section className="relative w-full min-h-[100vh] overflow-hidden flex items-center justify-center pt-24 sm:pt-28">
+      <Image
+        src={Hero_Banner}
+        alt="Hero Banner"
+        fill
+        priority
+        className="absolute inset-0 w-full h-full object-cover"
+      />
       {/* Background Stripes */}
       <div
         className="absolute inset-0"

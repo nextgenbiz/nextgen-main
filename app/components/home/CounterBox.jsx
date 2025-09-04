@@ -33,28 +33,33 @@ function CounterBox({
   }, [number]);
 
   return (
-    <div className="relative border-0 shadow-none  rounded-[15px] overflow-hidden h-40 md:h-48 w-full">
+    <div className="relative border-0 shadow-none rounded-[15px] overflow-hidden h-36 sm:h-40 md:h-48 w-full">
       <div
-        className="relative flex flex-row flex-wrap  w-full h-full px-2"
+        className="relative flex flex-col justify-between w-full h-full px-4 py-4"
         style={{
           backgroundImage: `url(${bg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="relative flex flex-col justify-center align-center items-center z-10  md:w-full md:h-full">
-          <div className="font-['Bebas_Neue'] font-normal text-[#264c92] text-3xl md:text-4xl leading-normal absolute bottom-[50px] left-[10px]">
+        {/* Counter Number */}
+        <div className="flex flex-col items-start">
+          {/* Number */}
+          <div className="font-['Bebas_Neue'] font-normal text-[#264c92] text-3xl absolute bottom-12 sm:text-4xl md:text-5xl leading-normal">
             {count}
             {suffix}
           </div>
-          <div className="font-['Bebas_Neue'] font-normal text-[#264c92] text-3xl leading-normal mt-2 absolute bottom-[5px] left-[10px]">
+
+          {/* Title */}
+          <div className="font-['Bebas_Neue'] font-normal text-[#264c92] text-2lg absolute bottom-3 sm:text-2xl md:text-3xl leading-normal">
             {title}
           </div>
         </div>
+        {/* Icon */}
         <Image
-          className={`absolute top-[15px] right-[20px] ${iconClass}`}
-          width={75}
-          height={75}
+          className={`absolute top-3 right-3 ${iconClass}`}
+          width={iconWidth || 60}
+          height={iconHeight || 60}
           alt={title}
           src={icon}
         />

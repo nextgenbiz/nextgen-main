@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+
+// Icons
 import Collateralfree from "../../assets/hotservice1.png";
 import Naiff from "../../assets/hotservice2.png";
 import SeedFund from "../../assets/hotservice3.png";
@@ -13,42 +15,42 @@ export const HotServicesSection = () => {
       amount: "₹5 cr",
       title: "Collateral Free Loans",
       backgroundImage:
-        "https://c.animaapp.com/metmcazsfuMR7v/img/rectangle-98.svg",
+        "../../assets/Rectangle.png",
       icon: Collateralfree,
     },
     {
       amount: "₹2 cr",
       title: "NAIFF Loans",
       backgroundImage:
-        "https://c.animaapp.com/metmcazsfuMR7v/img/rectangle-98.svg",
+        "../../assets/Rectangle.png",
       icon: Naiff,
     },
     {
       amount: "₹50 L",
       title: "Seed fund",
       backgroundImage:
-        "https://c.animaapp.com/metmcazsfuMR7v/img/rectangle-98.svg",
+        "../../assets/Rectangle.png",
       icon: SeedFund,
     },
     {
       amount: "₹10 cr",
       title: "Grant fund",
       backgroundImage:
-        "https://c.animaapp.com/metmcazsfuMR7v/img/rectangle-98.svg",
+        "../../assets/Rectangle.png",
       icon: GrantFund,
     },
     {
       amount: "₹1 cr",
       title: "Startup Seed Support",
       backgroundImage:
-        "https://c.animaapp.com/metmcazsfuMR7v/img/rectangle-98.svg",
+        "../../assets/Rectangle.png",
       icon: StartupSeed,
     },
     {
       amount: "₹50 L",
       title: "PMEGP",
       backgroundImage:
-        "https://c.animaapp.com/metmcazsfuMR7v/img/rectangle-98.svg",
+        "../../assets/Rectangle.png",
       icon: Pmegp,
     },
   ];
@@ -58,18 +60,19 @@ export const HotServicesSection = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-12 md:mb-20">
-          <h2 className="font-['Be_Vietnam_Pro'] font-semibold text-[#05325f] text-3xl sm:text-4xl md:text-[46.6px]">
+          <h2 className="font-semibold text-[#05325f] text-3xl sm:text-4xl md:text-[46.6px]">
             Hot Services (Ft. Funding)
           </h2>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-10 md:mb-12">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-14 mb-10 md:mb-12">
           {services.map((service, index) => (
             <div
               key={index}
-              className="relative w-full max-w-[350px] mx-auto h-[320px] sm:h-[350px] md:h-[403px] flex flex-col items-center bg-contain bg-no-repeat bg-center"
-              style={{ backgroundImage: `url(${service.backgroundImage})` }}
+              className="relative h-[180px]  shadow-none  md:h-[380px] flex flex-col items-center bg-cover md:bg-cover bg-no-repeat bg-center rounded-lg"
+              style={{ backgroundImage: `url(${service.backgroundImage})`,    boxShadow: '1.04px 2.07px 10.36px 1.04px #00000040',
+ }}
             >
               {/* Icon */}
               <Image
@@ -77,23 +80,31 @@ export const HotServicesSection = () => {
                 alt="Service Icon"
                 width={70}
                 height={70}
-                className="absolute w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] md:w-[90px] md:h-[90px] left-1/2 transform -translate-x-1/2"
+                className="absolute w-[60px] md:-mt-6 h-[60px] sm:w-[80px] sm:h-[80px] md:w-[90px] md:h-[90px] left-1/2 transform -translate-x-1/2 -top-6"
               />
 
               {/* Text Content */}
-              <div className="flex flex-col justify-center items-center mt-14 sm:mt-20 md:mt-24 z-10 px-2">
-                <p className="font-['Bayon'] font-normal text-[#264c92] text-xl sm:text-2xl md:text-3xl">
+              <div className="flex flex-col items-center mt-6 sm:mt-8 md:mt-10 z-10 text-center px-2 md:px-6">
+                {/* UP TO aligned right */}
+                <p className="bayon-font font-normal text-[#264c92] text-base sm:text-3xl md:text-5xl md:mt-7 w-[80%] text-left">
                   UP TO
                 </p>
-                <h1 className="bebas-neue-regular bg-[linear-gradient(171deg,rgba(46,111,182,1)_0%,rgba(123,174,224,0.42)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] text-transparent font-['Bebas_Neue'] text-[60px] sm:text-[70px] md:text-[90px] leading-none">
+
+                {/* ₹5 CR centered */}
+                <h1 className="bebas-neue-regular bg-[linear-gradient(171deg,rgba(46,111,182,1)_0%,rgba(123,174,224,0.42)_100%)] 
+                  [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] text-transparent 
+                  font-['Bebas_Neue'] text-[60px] md:text-[130px] leading-none mt-1 mb-1">
                   {service.amount}
                 </h1>
-                <h3 className="text-center font-['Be_Vietnam'] font-medium text-[#46484f] text-lg sm:text-xl md:text-2xl mt-2 px-2">
+
+                {/* Collateral Free Loans centered */}
+                <h3 className="font-medium text-[#46484f] text-sm sm:text-xl md:text-2xl md:mb-6">
                   {service.title}
                 </h3>
 
-                <button className="mt-4 md:mt-6 w-[220px] h-[45px] md:h-[51px] rounded-md bg-[#3a80c1] hover:bg-[#3076b7] border-none flex items-center justify-center transition">
-                  <span className="font-['Be_Vietnam'] font-normal text-white text-lg sm:text-xl md:text-[22px] flex items-center">
+                {/* Avail Now Button centered */}
+                <button className="py-1 px-2 md:w-[220px]  md:h-[51px] rounded-md bg-[#3a80c1] hover:bg-[#3076b7] flex items-center justify-center transition">
+                  <span className="font-normal text-white text-small  md:text-[22px] flex items-center">
                     Avail now
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
