@@ -122,6 +122,21 @@ export const HotServicesSection = () => {
             </div>
           ))}
         </div>
+      <div className="flex justify-center">
+          <button className="text-[#1463b8] text-sm sm:text-base md:text-lg font-semibold border-[#1463b8] flex items-center hover:opacity-80 transition">
+            View all
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="ml-1 w-4 h-4 sm:w-5 sm:h-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
   );
