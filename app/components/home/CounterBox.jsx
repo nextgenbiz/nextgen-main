@@ -43,18 +43,18 @@ function CounterBox({
         }}
       >
         <div className="relative flex flex-col justify-center align-center items-center z-10  md:w-full md:h-full">
-          <div className="font-['Bebas_Neue'] font-normal text-[#264c92] text-3xl md:text-3xl leading-normal">
+          <div className="font-['Bebas_Neue'] font-normal text-[#264c92] text-3xl md:text-4xl leading-normal absolute bottom-[50px] left-[10px]">
             {count}
             {suffix}
           </div>
-          <div className="font-['Bebas_Neue'] font-normal text-[#264c92] text-xl leading-normal mt-2">
+          <div className="font-['Bebas_Neue'] font-normal text-[#264c92] text-3xl leading-normal mt-2 absolute bottom-[5px] left-[10px]">
             {title}
           </div>
         </div>
         <Image
-          className={`absolute top-[10px] right-[16px] ${iconClass}`}
-          width={50}
-          height={50}
+          className={`absolute top-[15px] right-[20px] ${iconClass}`}
+          width={75}
+          height={75}
           alt={title}
           src={icon}
         />

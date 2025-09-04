@@ -1,14 +1,13 @@
 import Hero from "./components/home/Hero";
 import { Header } from "./components/Header";
 import CounterSection from "./components/home/CounterSection";
-import GrowthSection from "./components/home/GrowthSection";
-import Timeline from "./components/home/Timeline";
+import Timeline2 from "./components/home/Timeline2";
 import { HotServicesSection } from "./components/home/HotServicesSection";
 import Footer from "./components/Footer";
 import "./page.css";
 import Box from "./components/home/Box";
 import TestimonialsSlider from "./components/home/TestimonialsSlider";
-import Timeline2 from "./components/home/Timeline2";
+
 export default function Home() {
   return (
     <>
@@ -16,22 +15,9 @@ export default function Home() {
       <Hero />
       <CounterSection />
       <Timeline2 />
-
-      <section className="w-full pt-16 px-4 ">
-        <div className="max-w-7xl mx-auto">
-          {/* Header */}
-          <div className="text-center  mb-10">
-            <h2 className="max-w-7xl mx-auto  font-semibold text-[#05325f] text-[30px] md:text-[47.5px] leading-normal">
-              Achieving Business Growth
-            </h2>
-          </div>
-        </div>
-      </section>
       <Box />
-      {/* <GrowthSection /> */}
       <HotServicesSection />
       <TestimonialsSlider />
-      {/* <Timeline2 /> */}
       <Footer />
     </>
   );

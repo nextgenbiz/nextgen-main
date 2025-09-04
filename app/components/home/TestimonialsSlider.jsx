@@ -61,11 +61,11 @@ const TestimonialsSlider = () => {
       {/* Popup modal */}
       {selectedVideo && (
         <div
-          className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
+          className="fixed inset-0 bg-white flex items-center justify-center z-50"
           onClick={() => setSelectedVideo(null)}
         >
           <div
-            className="relative w-[90%] max-w-3xl bg-black rounded-xl"
+            className="relative w-[90%] max-w-3xl bg-white rounded-xl"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="relative pb-[56.25%] h-0">
