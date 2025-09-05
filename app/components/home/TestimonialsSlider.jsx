@@ -13,7 +13,7 @@ const TestimonialsSlider = () => {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 2000,
-    slidesToShow: 3,
+    slidesToShow: 1,
     speed: 500,
     arrows: false,
     dots: true,
