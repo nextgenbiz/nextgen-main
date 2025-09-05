@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-[#15324f] to-[#1c4268] text-white">
+    <footer className="bg-[#05325F] text-white">
       {/* Main Content Section */}
       <div className="container mx-auto px-6 py-16 text-center max-w-7xl">
         <p
@@ -29,7 +29,7 @@ export default function Footer() {
       {/* Navigation and Social Section */}
       <div className="">
         <div className="container mx-auto px-6 py-12 max-w-7xl border-t border-[#245589]">
-          <div className="flex flex-col md:flex-row items-center justify-between">
+          <div className="flex flex-col md:flex-row items-center justify-between text-center md:text-left">
             {/* Logo */}
             <div className="mb-8 md:mb-0">
               <div className="flex items-center">
@@ -185,7 +185,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Features */}
-      <div className="bg-[#3278bd] border-t border-[#3278bd]">
+      <div className="bg-[#2E6FB6] border-t border-[#3278bd]">
         <div
           className="container mx-auto px-4 py-4 md:py-6"
           style={{ maxWidth: "1200px" }}

@@ -61,11 +61,11 @@ const FAQ = () => {
                 <div className="flex items-center">
                   <div
                     className={`w-8 h-8 flex items-center justify-center rounded-full border-2 border-[#e2e8f0] transition-all duration-300 ${
-                      activeIndex === index ? "bg-[#f8fafc] rotate-180" : "bg-white"
+                      activeIndex === index ? "bg-[#76a5d3]" : "bg-[#245586]"
                     }`}
                   >
                     <svg
-                      className={`w-5 h-5 text-[#05325f] transform transition-transform duration-300 ${
+                      className={`w-5 h-5 text-white transform transition-transform duration-300 ${
                         activeIndex === index ? "rotate-180" : ""
                       }`}
                       fill="none"
@@ -82,7 +82,6 @@ const FAQ = () => {
                   </div>
                 </div>
               </button>
-
               {activeIndex === index && (
                 <div className="p-6 bg-white border-t border-[#e2e8f0] animate-in slide-in-from-top-2 duration-300">
                   <p className="text-[#64748b] leading-relaxed font-sans text-base md:text-lg">

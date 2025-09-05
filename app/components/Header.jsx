@@ -25,7 +25,7 @@ export const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY >= 50) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -38,13 +38,13 @@ export const Header = () => {
 
   return (
     <header
-      className={`w-full ${scrolled ? "bg-[#264c92] pb-5" : "bg-transparent"}`}
+      className={`w-full ${scrolled ? "bg-[#2E6FB6] pb-5" : "bg-transparent"}`}
     >
       <div
         className={`relative flex justify-between items-center  ${
           scrolled
             ? "px-4 sm:px-6 lg:px-16 pt-6 "
-            : "px-4 sm:px-6 lg:px-16 pt-6 sm:pt-8 lg:pt-10"
+            : "px-4 sm:px-6 lg:px-16 pt-6 "
         }`}
       >
         <a href="/">
@@ -59,7 +59,7 @@ export const Header = () => {
 
         <nav
           className={`hidden md:block absolute  left-1/2 transform -translate-x-1/2 z-20  ${
-            scrolled ? "top-[10px]" : "top-[30px]"
+            scrolled ? "top-[13px]" : "top-[13px]"
           }`}
         >
           <div className="bg-[#264c9266] rounded-[12.69px] border border-[#ffffff33] backdrop-blur-[2.12px] px-6 py-4">
@@ -110,7 +110,7 @@ export const Header = () => {
         <a
           href="/contact"
           className={`hidden md:block bg-[#264c92] px-6 py-2 rounded-xl text-white text-xl font-medium hover:bg-[#264c92]/90 transition-colors
-    ${scrolled ? "border border-white" : ""}`}
+    ${scrolled ? "" : ""}`}
         >
           Let's Transform
         </a>

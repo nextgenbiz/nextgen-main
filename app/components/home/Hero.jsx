@@ -12,15 +12,6 @@ export default function Hero() {
         priority
         className="absolute inset-0 w-full h-full object-cover"
       />
-      {/* Background Stripes */}
-      {/* <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage:
-            "url('https://c.animaapp.com/metmcazsfuMR7v/img/rectangle-64.svg')",
-          backgroundRepeat: "repeat-x",
-        }}
-      /> */}
 
       {/* Content */}
       <div className="relative flex flex-col mt-10 gap-6 max-w-7xl min-h-screen justify-end px-6 sm:px-10 lg:px-20 pb-20">
