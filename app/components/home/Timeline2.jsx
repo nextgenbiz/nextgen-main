@@ -47,16 +47,16 @@ const steps = [
 
 export default function Timeline2() {
   return (
-    <section className="w-full bg-[linear-gradient(180deg,rgba(232,244,255,1)_0%,rgba(232,244,255,1)_100%)] py-20 px-0">
+    <section className="w-full bg-[linear-gradient(180deg,rgba(232,244,255,1)_0%,rgba(232,244,255,1)_100%)] py-[30px] md:py-[60px] px-[15px]">
       <div className="mx-auto relative">
         {/* Header */}
         <div className="text-center  mb-10">
-          <h2 className="max-w-7xl mx-auto  font-semibold text-[#05325f] text-[30px] md:text-[47.5px] leading-normal">
+          <h2 className=" mx-auto  font-semibold text-[#05325f] text-[28px] md:text-[35.62px] leading-normal">
             From Spark to Motion — The Next-Gen Way:
           </h2>
         </div>
 
-        <div className="relative max-w-7xl mx-auto">
+        <div className="relative max-w-[1200px] mx-auto">
           <div className="relative  mx-auto h-full">
             {/* Background rectangles */}
             {/* <div
@@ -70,7 +70,7 @@ export default function Timeline2() {
             {steps.map((step) => (
               <div
                 key={step.id}
-                className="relative mt-1 md:mt-6 w-full flex items-center gap-4 px-4 md:gap-8 md:px-20 py-3 md:py-3 rounded-lg shadow-lg bg-white mb-5 md:mb-20"
+                className="relative mt-1 md:mt-6 w-full flex items-center gap-4 px-4 md:gap-8 md:px-20 py-3 md:py-3 rounded-lg shadow-lg bg-white mb-5 md:mb-10"
                 style={{
                   backgroundImage: `url(${timeline.src})`,
                   backgroundSize: "cover",
@@ -91,17 +91,17 @@ export default function Timeline2() {
                 {/* Text Content */}
                 <div className="flex flex-col ">
                   <h3
-                    className={`font-semibold font-['Be_Vietnam_Pro'] font-semibold text-[#264c92] text-lg md:text-[28.6px] leading-normal `}
+                    className={`font-semibold Vietnam-font  font-semibold text-[#264c92] text-[19.58px] md:text-[28.6px] leading-normal `}
                   >
                     {step.title}
                   </h3>
                   <p
-                    className={` font-medium text-black text-sm md:text-[17.8px] leading-normal`}
+                    className={` font-medium text-black Vietnam-font  text-[12px] md:text-[17.8px] leading-normal`}
                   >
                     {step.subtitle}
                   </p>
                   <p
-                    className={`text-black font-normal text-sm md:text-[19.7px] `}
+                    className={`text-black font-normal Vietnam-font  text-[13px] md:text-[19.7px] `}
                   >
                     {step.desc}
                   </p>
@@ -113,7 +113,7 @@ export default function Timeline2() {
             <Image
               height={164}
               width={1403}
-              className="absolute w-3.5 h-[115vh] md:h-[120vh] top-[-30px] md:top-0 scale-[1] md:scale-[1.1] left-[32px] md:left-[110px] z-0"
+              className="absolute w-3.5 h-[110vh] md:h-full top-[-25px] md:top-0 scale-[1] md:scale-[1.1] left-[32px] md:left-[110px] z-0"
               src="https://c.animaapp.com/metmcazsfuMR7v/img/line-14.svg"
               alt=""
             />

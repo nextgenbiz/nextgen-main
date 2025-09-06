@@ -38,44 +38,50 @@ export const Header = () => {
 
   return (
     <header
-      className={`w-full ${scrolled ? "bg-[#2E6FB6] pb-5" : "bg-transparent"}`}
+      className={`w-full ${scrolled ? "bg-[#2E6FB6]" : "bg-transparent"}`}
     >
       <div
-        className={`relative flex justify-between items-center  ${
-          scrolled
-            ? "px-4 sm:px-6 lg:px-16 pt-6 "
-            : "px-4 sm:px-6 lg:px-16 pt-6 "
-        }`}
+        className={`bg-[#264c9266] rounded-[12.69px] border border-[#ffffff33] backdrop-blur-[2.12px] flex items-center justify-between
+    m-4 md:m-0
+    md:relative md:justify-between md:bg-transparent md:rounded-none md:border-0 md:backdrop-blur-0
+    ${
+      scrolled
+        ? "px-4 sm:px-6 lg:px-16 py-2 md:py-6"
+        : "px-4 sm:px-6 lg:px-16 py-2 md:py-6"
+    }`}
       >
-        <a href="/">
-          <Image
-            className="w-32 sm:w-40 lg:w-56 h-auto object-contain"
-            alt="Hiring instagram"
-            src="https://c.animaapp.com/metmcazsfuMR7v/img/hiring-instagram-post--2--2.png"
-            width={248}
-            height={49}
-          />
-        </a>
+        <div className=" md:basis-1/4 lg:basis-1/2 ">
+          <a href="/">
+            <Image
+              className="w-32 sm:w-40 lg:w-56 h-auto object-contain"
+              alt="Hiring instagram"
+              src="https://c.animaapp.com/metmcazsfuMR7v/img/hiring-instagram-post--2--2.png"
+              width={248}
+              height={49}
+            />
+          </a>
+        </div>
 
-        <nav
-          className={`hidden md:block absolute  left-1/2 transform -translate-x-1/2 z-20  ${
-            scrolled ? "top-[13px]" : "top-[13px]"
-          }`}
-        >
-          <div className="bg-[#264c9266] rounded-[12.69px] border border-[#ffffff33] backdrop-blur-[2.12px] px-6 py-4">
-            <NavigationMenu>
-              <NavigationMenuList className="flex items-center gap-8">
-                {navigationItems.map((item) => (
-                  <NavigationMenuItem key={item.label}>
-                    <NavigationMenuLink
-                      href={item.href}
-                      className="inter-font text-white text-[19px] hover:text-white/80 transition-colors"
-                    >
-                      {item.label}
-                    </NavigationMenuLink>
-                  </NavigationMenuItem>
-                ))}
-                {/* <NavigationMenuItem>
+        <div className="md:basis-3/4 lg:basis-1/2 flex justify-end items-center gap-6">
+          <nav
+            className={`hidden md:block     z-20  ${
+              scrolled ? "top-[13px]" : "top-[13px]"
+            }`}
+          >
+            <div className="bg-[#264c9266] rounded-[12.69px] border border-[#ffffff33] backdrop-blur-[2.12px]  h-[40px] px-4 flex items-center  items-center justify-center">
+              <NavigationMenu>
+                <NavigationMenuList className="flex items-center  items-center justify-center gap-8">
+                  {navigationItems.map((item) => (
+                    <NavigationMenuItem key={item.label}>
+                      <NavigationMenuLink
+                        href={item.href}
+                        className="inter-font text-white text-[14.28px] hover:text-white/80 transition-colors"
+                      >
+                        {item.label}
+                      </NavigationMenuLink>
+                    </NavigationMenuItem>
+                  ))}
+                  {/* <NavigationMenuItem>
                   <NavigationMenuTrigger className="font-['Inter'] font-normal text-white text-[19px] bg-transparent hover:bg-transparent focus:bg-transparent data-[active]:bg-transparent data-[state=open]:bg-transparent">
                     More
                     <ChevronDownIcon className="ml-2 h-3 w-3" />
@@ -91,29 +97,30 @@ export const Header = () => {
                     </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem> */}
-              </NavigationMenuList>
-            </NavigationMenu>
-          </div>
-        </nav>
+                </NavigationMenuList>
+              </NavigationMenu>
+            </div>
+          </nav>
 
-        <button
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="md:hidden p-2 text-white z-30"
-        >
-          {isMobileMenuOpen ? (
-            <X className="h-6 w-6" />
-          ) : (
-            <Menu className="h-6 w-6" />
-          )}
-        </button>
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden p-2 text-white z-30"
+          >
+            {isMobileMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
+          </button>
 
-        <a
-          href="/contact"
-          className={`hidden md:block bg-[#264c92] px-6 py-2 rounded-xl text-white text-xl font-medium hover:bg-[#264c92]/90 transition-colors
+          <a
+            href="/contact"
+            className={`hidden md:block bg-[#264c92] px-6 py-2 rounded-xl text-white text-[16.66px] inter-font hover:bg-[#264c92]/90 transition-colors
     ${scrolled ? "" : ""}`}
-        >
-          Let's Transform
-        </a>
+          >
+            Let's Transform
+          </a>
+        </div>
       </div>
 
       {isMobileMenuOpen && (

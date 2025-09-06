@@ -8,7 +8,7 @@ import slide1 from "../../assets/slide1.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const TestimonialsSlider = () => {
+const TestimonialsMobile = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
   const settings = {
     className: "center",
@@ -19,7 +19,7 @@ const TestimonialsSlider = () => {
     speed: 500,
     arrows: false,
     dots: true,
-    slidesToShow: 3, // desktop
+    slidesToShow: 1, // desktop
     slidesToScroll: 1,
     centerPadding: "15%", // how much side slides peek in desktop
   };
@@ -102,4 +102,4 @@ const TestimonialsSlider = () => {
   );
 };
 
-export default TestimonialsSlider;
+export default TestimonialsMobile;

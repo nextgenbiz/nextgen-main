@@ -8,7 +8,7 @@ const valuesData = [
     title: "Integrity First",
     description:
       "We believe in honesty, transparency, and building trust, no shortcuts, bas clear aur sahi kaam.",
-    icon: <Shield className="w-5 h-5" />,
+    icon: <Shield className="w-[19.20px] h-[19.20] md:w-5 h-5" />,
   },
   {
     title: "People Over Profit",
@@ -32,33 +32,33 @@ function SparkToMotion() {
   };
 
   return (
-    <section className="w-full relative py-16 bg-white overflow-hidden">
+    <section className="w-full relative py-[30px] md:py-[60px] bg-white overflow-hidden">
       {/* Background decorative elements */}
       {/* <div className="absolute top-0 left-0 w-72 h-72 bg-blue-100 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-30"></div> */}
       {/* <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-200 rounded-full translate-x-1/3 translate-y-1/3 opacity-20"></div> */}
 
-      <div className="max-w-7xl mx-auto px-4 relative z-10">
+      <div className="max-w-7xl mx-auto relative z-10">
         {/* Header */}
-        <div className="text-center  mb-10">
-          <h2 className="max-w-7xl mx-auto  font-semibold text-[#05325f] text-[30px] md:text-[47.5px] leading-normal">
+        <div className="text-center  px-2  mb-10">
+          <h2 className="max-w-7xl mx-auto  font-semibold text-[#05325f] text-[16.45px] md:text-[35.75px] leading-normal">
             From Spark to Motion - The Next-Gen Way:
           </h2>
 
           {/* Tab Layout */}
-          <div className="hidden lg:flex items-center justify-center mt-10">
+          <div className=" lg:flex items-center justify-center mt-4 md:mt-10">
             <div className="flex bg-white border border-gray-200 rounded-xl shadow-md overflow-hidden">
               {valuesData.map((item, index) => (
                 <div
                   key={index}
                   onClick={() => handleCardClick(index)}
-                  className={`flex items-center gap-2 px-6 py-3 cursor-pointer text-sm font-semibold transition-all duration-300 ${
+                  className={`flex text-left md:text-center leading-normal items-center gap-2 px-2 md:px-6 py-1 md:py-3 cursor-pointer  font-semibold transition-all duration-300 text-[9.42px] md:text-[14.77px] ${
                     activeCard === index
-                      ? "bg-gradient-to-r from-[#245586] to-[#76a5d3] text-white"
+                      ? "bg-gradient-to-b from-[#2E6FB6] to-[#7BAEE0] text-white"
                       : "bg-white text-black hover:bg-gray-50"
                   }`}
                 >
                   <div
-                    className={`w-8 h-8 flex items-center justify-center rounded-full border ${
+                    className={`md:w-8 md:h-8 flex items-center justify-center rounded-full border ${
                       activeCard === index
                         ? "bg-white/20 border-white text-white"
                         : "bg-[#1c4268] text-white border-[#1c4268]/20"
@@ -74,7 +74,7 @@ function SparkToMotion() {
         </div>
 
         {/* Desktop Layout */}
-        <div className="hidden lg:block relative max-w-6xl mx-auto">
+        <div className="hidden lg:block relative max-w-6xl mx-auto  px-4">
           <div className="flex justify-center gap-8">
             {valuesData.map((item, index) => (
               <div
@@ -107,7 +107,9 @@ function SparkToMotion() {
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-xl font-bold mb-4">{item.title}</h3>
+                  <h3 className="text-[17.02px] md:text-[22.2px] font-bold mb-4">
+                    {item.title}
+                  </h3>
                   <p
                     className={`leading-relaxed ${
                       activeCard === index ? "text-blue-100" : "text-gray-600"
@@ -122,7 +124,7 @@ function SparkToMotion() {
         </div>
 
         {/* Tablet Layout */}
-        <div className="hidden md:block lg:hidden">
+        <div className="hidden md:block lg:hidden  px-4">
           <div className="grid grid-cols-2 gap-8 max-w-4xl mx-auto">
             {valuesData.slice(0, 2).map((item, index) => (
               <div
@@ -150,7 +152,9 @@ function SparkToMotion() {
                   >
                     {item.icon}
                   </div>
-                  <h3 className="text-lg font-bold mb-3">{item.title}</h3>
+                  <h3 className="text-[17.02px] md:text-[22.2px] font-bold mb-3">
+                    {item.title}
+                  </h3>
                   <p
                     className={`text-sm leading-relaxed ${
                       activeCard === index ? "text-blue-100" : "text-gray-600"
@@ -188,7 +192,7 @@ function SparkToMotion() {
                   >
                     {valuesData[2].icon}
                   </div>
-                  <h3 className="text-lg font-bold mb-3">
+                  <h3 className="text-[17.02px] md:text-[22.2px] font-bold mb-3">
                     {valuesData[2].title}
                   </h3>
                   <p
@@ -205,7 +209,7 @@ function SparkToMotion() {
         </div>
 
         {/* Mobile Layout */}
-        <div className="md:hidden space-y-6">
+        <div className="md:hidden space-y-6  px-4">
           {valuesData.map((item, index) => (
             <div
               key={index}
@@ -240,7 +244,9 @@ function SparkToMotion() {
                   {/* Content */}
                   <div className="flex-1">
                     <div className="flex items-center justify-between">
-                      <h3 className="text-lg font-bold">{item.title}</h3>
+                      <h3 className="text-[17.02px] md:text-[22.2px] font-bold">
+                        {item.title}
+                      </h3>
                       <div
                         className={
                           activeCard === index ? "text-white" : "text-[#1c4268]"
@@ -254,7 +260,7 @@ function SparkToMotion() {
                       </div>
                     </div>
                     <p
-                      className={`text-sm leading-relaxed ${
+                      className={`text-[13.27px] leading-relaxed ${
                         activeCard === index
                           ? "text-blue-100 mt-2"
                           : "text-gray-600 line-clamp-2"

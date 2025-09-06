@@ -33,25 +33,25 @@ function CounterBox({
   }, [number]);
 
   return (
-    <div className="relative border-0 shadow-none rounded-[15px] overflow-hidden h-36 sm:h-40 md:h-48 w-full">
+    <div className="relative border-0 shadow-none rounded-lg overflow-hidden">
       <div
-        className="relative flex flex-col justify-between w-full h-full px-4 py-4"
+        className="relative flex flex-col justify-between  px-4 py-4"
         style={{
-          backgroundImage: `url(${bg})`,
+          backgroundImage: `linear-gradient(180deg, rgba(46, 111, 182, 0.4) 0%, rgba(123, 174, 224, 0.4) 100%), url(${bg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
         {/* Counter Number */}
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-start pt-10 md:pt-20">
           {/* Number */}
-          <div className="font-['Bebas_Neue'] font-normal text-[#264c92] text-3xl absolute bottom-12 sm:text-4xl md:text-5xl leading-normal">
+          <div className="bebas-neue-regular font-normal text-[#264c92]  bottom-12 text-[38.78px] md:text-[54.64px] leading-normal">
             {count}
             {suffix}
           </div>
 
           {/* Title */}
-          <div className="font-['Bebas_Neue'] font-normal text-[#264c92] text-2lg absolute bottom-3 sm:text-2xl md:text-3xl leading-normal">
+          <div className="bebas-neue-regular font-normal text-[#264c92]   bottom-3 text-[22.16px] md:text-[31.22px] leading-normal">
             {title}
           </div>
         </div>

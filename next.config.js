@@ -6,6 +6,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "c.animaapp.com",
       },
+      {
+        protocol: "https",
+        hostname: "img.youtube.com", // ✅ added youtube image host
+      },
     ],
   },
 };

@@ -12,47 +12,54 @@ const FAQ = () => {
   const faqItems = [
     {
       question: "Who is eligible for government grants?",
-      answer: "Eligibility varies. Typically, small businesses, startups, homeowners, non-profits, and research entities can apply.",
+      answer:
+        "Eligibility varies. Typically, small businesses, startups, homeowners, non-profits, and research entities can apply.",
     },
     {
       question: "How long does the application process take?",
-      answer: "The application process typically takes 4-6 weeks, depending on the complexity of your request and the current volume of applications.",
+      answer:
+        "The application process typically takes 4-6 weeks, depending on the complexity of your request and the current volume of applications.",
     },
     {
       question: "What documents do I need to apply?",
-      answer: "Generally, you'll need identification documents, proof of address, business plans, financial statements, and any industry-specific licenses or permits.",
+      answer:
+        "Generally, you'll need identification documents, proof of address, business plans, financial statements, and any industry-specific licenses or permits.",
     },
     {
       question: "Can I apply for multiple grants at once?",
-      answer: "Yes, you can apply for multiple grants as long as you meet the eligibility criteria for each program. However, you may need to disclose other applications during the process.",
+      answer:
+        "Yes, you can apply for multiple grants as long as you meet the eligibility criteria for each program. However, you may need to disclose other applications during the process.",
     },
     {
       question: "What are the common reasons for grant rejection?",
-      answer: "Common reasons include incomplete applications, not meeting eligibility criteria, insufficient documentation, or proposals that don't align with grant objectives.",
+      answer:
+        "Common reasons include incomplete applications, not meeting eligibility criteria, insufficient documentation, or proposals that don't align with grant objectives.",
     },
     {
       question: "Is there a fee to apply for government grants?",
-      answer: "Legitimate government grants never require upfront fees. Be cautious of any program asking for payment to apply or guarantee approval.",
+      answer:
+        "Legitimate government grants never require upfront fees. Be cautious of any program asking for payment to apply or guarantee approval.",
     },
   ];
 
   return (
-    <section className="w-full py-16 px-4 bg-[#f8fafc]">
-      <div className="max-w-7xl mx-auto"> {/* Changed to max-w-7xl for wider container */}
+    <section className="w-full py-[30px] md:py-[60px] px-4 bg-[#f8fafc]">
+      <div className="max-w-[1000px] mx-auto">
+        {" "}
+        {/* Changed to max-w-7xl for wider container */}
         <div className="text-center mb-16">
           <h2 className="font-['Be_Vietnam_Pro'] font-semibold text-[#05325f] text-3xl md:text-[46.6px]">
             Frequently Asked Questions
           </h2>
         </div>
-
         <div className="space-y-6">
           {faqItems.map((item, index) => (
             <div
               key={index}
-              className="border border-[#e2e8f0] rounded-lg overflow-hidden transition-all duration-300 shadow-lg hover:shadow-xl w-full" // Added w-full
+              className="border border-[#C9E5FF] rounded-lg overflow-hidden transition-all duration-300 shadow-lg hover:shadow-xl w-full" // Added w-full
             >
               <button
-                className="flex justify-between items-center w-full p-6 text-left bg-white hover:bg-[#f8fafc] transition-colors duration-200"
+                className="flex justify-between items-center w-full p-6 text-left bg-[#EAF2FF] hover:bg-[#EAF2FF] transition-colors duration-200"
                 onClick={() => toggleFAQ(index)}
               >
                 <span className="font-medium text-[#1e293b] text-lg md:text-xl font-sans max-w-[80%]">
@@ -83,7 +90,7 @@ const FAQ = () => {
                 </div>
               </button>
               {activeIndex === index && (
-                <div className="p-6 bg-white border-t border-[#e2e8f0] animate-in slide-in-from-top-2 duration-300">
+                <div className="p-6 bg-white border-t border-[#e2e8f0] animate-in slide-in-from-top-2 duration-300 bg-white">
                   <p className="text-[#64748b] leading-relaxed font-sans text-base md:text-lg">
                     {item.answer}
                   </p>

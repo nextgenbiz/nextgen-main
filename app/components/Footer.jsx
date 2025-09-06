@@ -5,23 +5,20 @@ export default function Footer() {
     <footer className="bg-[#05325F] text-white">
       {/* Main Content Section */}
       <div className="container mx-auto px-6 py-16 text-center max-w-7xl">
-        <p
-          className="text-[13px] text-white uppercase tracking-wider mb-4"
-          style={{ letterSpacing: "1ch" }}
-        >
+        <p className="vi text-[8px] md:text-[13px] opacity-[0.6] text-white uppercase mb-4 Vietnam-font">
           BUSINESS ISN'T COMPLICATED. LOG BANATE HAI.
         </p>
 
-        <h2 className="text-4xl md:text-5xl font-bold mb-8">
+        <h2 className="text-[23.69px] md:text-[35.67px] font-bold mb-8">
           We just un-complicate it.
         </h2>
 
-        <p className="text-[19px] text-white mb-12 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-[17.97px] opacity-[0.8] text-white mb-12 max-w-2xl mx-auto ">
           Aapke paas vision hai, hum handle karenge chaos. Let's get to work
           together.
         </p>
 
-        <button className="bg-gradient-to-b from-[#245586] to-[#76a5d3] text-white inter-font px-8 py-3 rounded-md transition-colors duration-300">
+        <button className="bg-gradient-to-b from-[#2E6FB6] to-[#7BAEE0] text-white text-[15.97px] inter-font px-8 py-3 rounded-md transition-colors duration-300">
           Contact Us
         </button>
       </div>
@@ -141,10 +138,7 @@ export default function Footer() {
 
       {/* Footer Bottom */}
       <div className="">
-        <div
-          className="container mx-auto px-6 py-8 max-w-7xl border-t border-[#245589]"
-          
-        >
+        <div className="container mx-auto px-6 py-8 max-w-7xl border-t border-[#245589]">
           <div className="flex flex-col md:flex-row items-center justify-between text-sm text-white">
             <div className="mb-4 md:mb-0">
               © 2025 By Next-Gen Business Consultancy PVT. LTD

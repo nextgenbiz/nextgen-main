@@ -3,7 +3,7 @@ import Hero_Banner from "../../assets/Hero _Banner.webp";
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-screen overflow-hidden flex flex-col pt-20 md:pt-2">
+    <section className="relative w-full h-[100vh] overflow-hidden flex flex-col py-20 md:pt-2 ">
       {/* Background Image */}
       <Image
         src={Hero_Banner}
@@ -14,27 +14,27 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative flex flex-col mt-10 gap-6 max-w-7xl min-h-screen justify-end px-6 sm:px-10 lg:px-20 pb-20">
+      <div className="relative flex flex-col mt-5 md:mt-20 gap-6  min-h-screen justify-center px-6 sm:px-10 lg:px-20 pb-20">
         {/* Growth Partner Badge */}
-        <div className="flex items-center justify-between bg-[#264c9280] border border-white/20 backdrop-blur rounded-lg px-4 py-2 w-full max-w-xl">
-          <span className="text-white text-xl sm:text-2xl font-medium">
+        <div className="flex items-center justify-between bg-[#264c9280] border border-white/20 backdrop-blur rounded-lg px-2 py-2 md:w-[350px]">
+          <span className="text-white text-[18.08px] md:text-[23px] font-medium">
             Your Growth Partner
           </span>
-          <div className="bg-[url(https://c.animaapp.com/metmcazsfuMR7v/img/rectangle-86.svg)] bg-cover px-3 py-1 rounded-md">
-            <span className="text-white text-sm sm:text-base font-medium">
+          <div className="bg-[#3A80C1]  px-2 pb-1  rounded-md">
+            <span className="text-white text-[10px] md:text-[12px] font-medium">
               Co-founder
             </span>
           </div>
         </div>
 
         {/* Heading */}
-        <h1 className="text-white text-3xl sm:text-5xl lg:text-6xl font-semibold leading-snug text-center md:text-left">
+        <h1 className="text-white text-[32px] lg:text-[43.94px] font-semibold leading-snug text-center md:text-left">
           Your Vision, Our Execution.
           <br /> Zero Obstacles.
         </h1>
 
         {/* Description */}
-        <p className="text-white text-base sm:text-lg lg:text-xl leading-relaxed tracking-wide text-center md:text-left whitespace-normal md:whitespace-nowrap">
+        <p className="text-white   md:text-[18.55px] leading-relaxed tracking-wide text-center md:text-left whitespace-normal md:whitespace-nowrap">
           Business is not a journey, it's an expedition. Every obstacle ek pahad
           hai, every win ek nayi duniya. <br />
           We're not here to advise; hum hain aapke saath legends & legacies
@@ -42,44 +42,46 @@ export default function Hero() {
         </p>
 
         {/* Features */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 md:mt-10 w-70 md:w-full mx-auto">
           <div className="flex items-center justify-between bg-[#264c9266] border border-white/20 backdrop-blur rounded-xl p-4">
-            <span className="text-white text-lg md:text-2xl font-medium">
+            <span className="text-white text-[11.2px] md:text-[27.24px] font-medium">
               Bold Vision
             </span>
             <Image
               alt="Eye"
-              className="w-[50px] h-[50px] md:w-[80px] md:h-[80px]"
+              className="w-[31px] h-[20px] md:w-[78px] md:h-[48px]"
               src="https://c.animaapp.com/metmcazsfuMR7v/img/eye-svgrepo-com-1.svg"
               width={80}
               height={80}
             />
           </div>
 
-          <div className="flex items-center justify-between bg-[#264c9266] border border-white/20 backdrop-blur rounded-xl p-4">
-            <span className="text-white text-lg md:text-2xl font-medium">
+          <div className="flex items-center justify-between bg-[#264c9266] border border-white/20 backdrop-blur rounded-xl px-4">
+            <span className="text-white text-[11.2px] md:text-[27.24px] font-medium">
               True Growth
             </span>
             <Image
               alt="Growth"
-              className="w-[50px] h-[50px] md:w-[80px] md:h-[80px]"
+              className="w-[31px] h-[20px] md:w-[78px] md:h-[48px]"
               src="https://c.animaapp.com/metmcazsfuMR7v/img/growth-svgrepo-com-1.svg"
               width={80}
               height={80}
             />
           </div>
 
-          <div className="flex items-center justify-between bg-[#264c9266] border border-white/20 backdrop-blur rounded-xl p-4">
-            <span className="text-white text-lg md:text-2xl font-medium">
-              Limitless Scale
-            </span>
-            <Image
-              alt="Scale"
-              className="w-[50px] h-[50px] md:w-[70px] md:h-[70px]"
-              src="https://c.animaapp.com/metmcazsfuMR7v/img/vector.svg"
-              width={70}
-              height={70}
-            />
+          <div className="col-span-2 lg:col-span-1 flex items-center justify-center">
+            <div className="flex items-center justify-between bg-[#264c9266] border border-white/20 backdrop-blur rounded-xl p-4 md:w-full ">
+              <span className="text-white text-[11.2px] md:text-[27.24px] font-medium">
+                Limitless Scale
+              </span>
+              <Image
+                alt="Scale"
+                className="w-[31px] h-[20px] md:w-[78px] md:h-[48px]"
+                src="https://c.animaapp.com/metmcazsfuMR7v/img/vector.svg"
+                width={70}
+                height={70}
+              />
+            </div>
           </div>
         </div>
       </div>
