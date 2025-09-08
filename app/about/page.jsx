@@ -8,20 +8,45 @@ import Impact from "../components/about/Impact";
 import CTA from "../components/about/CTA";
 import Footer from "../components/Footer";
 import "./page.css";
-import SEO from "../components/SEO";
+
+export const metadata = {
+  title: "NextGen Consultancy India | Trusted Startup Growth Partner",
+  description:
+    "Learn how NextGen Consultancy supports entrepreneurs with Startup India certification, MSME compliance, and strategic business growth.",
+
+  // Open Graph (Facebook, LinkedIn, WhatsApp, Slack, etc.)
+  openGraph: {
+    title: "Discover NextGen Business Consultancy | From Idea to Growth",
+    description:
+      "From registration to business expansion, NextGen Business Consultancy enables founders to focus on growth while we handle the rest.",
+    url: "https://www.nextgenbusiness.co.in/about",
+    siteName: "NextGen Business Consultancy",
+    locale: "en_IN",
+    type: "website",
+    images: [
+      {
+        url: "https://www.nextgenbusiness.co.in/og-image-about.jpg", // About page OG image
+        width: 1200,
+        height: 630,
+        alt: "NextGen Consultancy - About Us",
+      },
+    ],
+  },
+
+  // Twitter (Twitter/X)
+  twitter: {
+    card: "summary_large_image",
+    title: "Discover NextGen Business Consultancy | From Idea to Growth",
+    description:
+      "From registration to business expansion, NextGen Business Consultancy enables founders to focus on growth while we handle the rest.",
+    images: ["https://www.nextgenbusiness.co.in/og-image-about.jpg"],
+    creator: "@NextGenBiz", // optional
+  },
+};
+
 export default function About() {
   return (
     <>
-      <SEO
-        title="NextGen Consultancy India | Trusted Startup Growth Partner"
-        description="Learn how NextGen Consultancy supports entrepreneurs with Startup India certification, MSME compliance, and strategic business growth."
-        ogTitle="Discover NextGen Business Consultancy | From Idea to Growth"
-        ogDescription="From registration to business expansion, NextGen Business Consultancy enables founders to focus on growth while we handle the rest."
-        // twitterTitle="NextGen – Startup Growth Partner"
-        // twitterDescription="Helping founders with compliance, tax, and funding."
-        // url="https://mywebsite.com"
-        // image="https://mywebsite.com/og-image.jpg"
-      />
       <Header />
       <Hero />
       <Services />

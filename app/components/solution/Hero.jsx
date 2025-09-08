@@ -33,13 +33,13 @@ export default function Hero() {
 
           {/* Buttons */}
           <div className="flex flex-row flex-wrap justify-center md:justify-center lg:justify-start gap-3 sm:gap-4 mt-4">
-            <button className="flex items-center justify-center bg-[#EAF2FF] hover:bg-gray-100 transition-all duration-300 rounded-xl h-10 sm:h-12 px-6 sm:px-8 shadow-lg hover:shadow-xl transform hover:scale-105 text-sm sm:text-base font-medium text-black">
+            <a href='/contact' className="flex items-center justify-center bg-[#EAF2FF] hover:bg-gray-100 transition-all duration-300 rounded-xl h-10 sm:h-12 px-6 sm:px-8 shadow-lg hover:shadow-xl transform hover:scale-105 text-sm sm:text-base font-medium text-black">
               Get Funding Now
-            </button>
+            </a>
 
-            <button className="flex items-center justify-center bg-[#EAF2FF] border border-white hover:bg-white hover:border-white transition-all duration-300 rounded-xl h-10 sm:h-12 px-6 sm:px-8 transform hover:scale-105 text-sm sm:text-base font-medium text-black">
+            <a href='/contact' className="flex items-center justify-center bg-[#EAF2FF] border border-white hover:bg-white hover:border-white transition-all duration-300 rounded-xl h-10 sm:h-12 px-6 sm:px-8 transform hover:scale-105 text-sm sm:text-base font-medium text-black">
               Expert Consultation
-            </button>
+            </a>
           </div>
         </div>
 

@@ -9,21 +9,46 @@ import Box from "./components/home/Box";
 import TestimonialsSlider from "./components/home/TestimonialsSlider";
 import Testimonialmobile from "./components/home/TestimonialsMobile";
 import Test from "./components/home/Test";
-import SEO from "./components/SEO";
 import CTA from "./components/home/CTA";
+
+export const metadata = {
+  title: "NextGen Business Consultancy | India’s Startup Growth Hub",
+  description:
+    "Your one-stop hub for Startup India, MSME support, tax exemptions, and investor connections. NextGen powers India’s startup growth journey.",
+
+  // Open Graph (used by Facebook, LinkedIn, WhatsApp, Slack, etc.)
+  openGraph: {
+    title: "India’s Trusted Partner for Startup Success | NextGen Consultancy",
+    description:
+      "Get expert guidance on registrations, tax holidays, compliance & investor linkage with NextGen Consultancy.",
+    url: "https://www.nextgenbusiness.co.in/",
+    siteName: "NextGen Business Consultancy",
+    locale: "en_IN",
+    type: "website",
+    images: [
+      {
+        url: "https://www.nextgenbusiness.co.in/og-image-home.jpg", // Home page OG image
+        width: 1200,
+        height: 630,
+        alt: "NextGen Consultancy - Startup Growth Hub",
+      },
+    ],
+  },
+
+  // Twitter (Twitter/X cards)
+  twitter: {
+    card: "summary_large_image",
+    title: "India’s Trusted Partner for Startup Success | NextGen Consultancy",
+    description:
+      "Get expert guidance on registrations, tax holidays, compliance & investor linkage with NextGen Consultancy.",
+    images: ["https://www.nextgenbusiness.co.in/og-image-home.jpg"],
+    creator: "@NextGenBiz", // optional: your Twitter handle
+  },
+};
+
 export default function Home() {
   return (
     <>
-      <SEO
-        title="NextGen Business Consultancy | India’s Startup Growth Hub"
-        description="Your one-stop hub for Startup India, MSME support, tax exemptions, and investor connections. NextGen powers India’s startup growth journey."
-        ogTitle="India’s Trusted Partner for Startup Success | NextGen Consultancy"
-        ogDescription="Get expert guidance on registrations, tax holidays, compliance & investor linkage with NextGen Consultancy."
-        twitterTitle="NextGen – Startup Growth Partner"
-        twitterDescription="Helping founders with compliance, tax, and funding."
-        // url="https://mywebsite.com"
-        // image="https://mywebsite.com/og-image.jpg"
-      />
       <Header />
       <Hero />
       <CounterSection />
@@ -31,6 +56,7 @@ export default function Home() {
       <Box />
       <HotServicesSection />
       <Test />
+
       {/* Desktop / Tablet version */}
       {/* <div className="hidden md:block">
         <TestimonialsSlider />
@@ -40,6 +66,7 @@ export default function Home() {
       {/* <div className="block md:hidden">
         <Testimonialmobile />
       </div> */}
+
       <CTA />
       <Footer />
     </>
