@@ -135,7 +135,7 @@ export const HotServicesSection = () => {
           ))}
         </div>
         <div className="flex justify-center">
-          <button className="text-[#1463b8] text-sm sm:text-base md:text-lg font-semibold border-[#1463b8] flex items-center hover:opacity-80 transition">
+          <a href='/solution' className="text-[#1463b8] text-sm sm:text-base md:text-lg font-semibold border-[#1463b8] flex items-center hover:opacity-80 transition">
             View all
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -151,7 +151,7 @@ export const HotServicesSection = () => {
                 d="M9 5l7 7-7 7"
               />
             </svg>
-          </button>
+          </a>
         </div>
       </div>
     </section>

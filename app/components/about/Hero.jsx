@@ -33,11 +33,11 @@ export default function Hero() {
 
           {/* Buttons */}
           <div className="flex flex-row flex-wrap justify-center md:justify-center lg:justify-start gap-3 sm:gap-4 mt-4">
-            <a className="flex items-center justify-center bg-white border border-white hover:bg-white hover:border-white transition-all duration-300 rounded-xl h-10 sm:h-12 px-6 sm:px-8 transform hover:scale-105 text-sm sm:text-base font-medium text-black">
+            <a href="/contact" className="flex items-center justify-center bg-white border border-white hover:bg-white hover:border-white transition-all duration-300 rounded-xl h-10 sm:h-12 px-6 sm:px-8 transform hover:scale-105 text-sm sm:text-base font-medium text-black">
               Start Your Journey
             </a>
 
-            <a className="flex items-center justify-center bg-white border border-white hover:bg-white hover:border-white transition-all duration-300 rounded-xl h-10 sm:h-12 px-6 sm:px-8 transform hover:scale-105 text-sm sm:text-base font-medium text-black">
+            <a href="/contact" className="flex items-center justify-center bg-white border border-white hover:bg-white hover:border-white transition-all duration-300 rounded-xl h-10 sm:h-12 px-6 sm:px-8 transform hover:scale-105 text-sm sm:text-base font-medium text-black">
               Services
             </a>
           </div>
