@@ -106,13 +106,7 @@ export default function Home() {
 
   return (
     <>
-      {/* ✅ Inject JSON-LD Schema using Next.js Script */}
-      <Script
-        id="faq-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+     
 
       <Header />
       <Hero />
