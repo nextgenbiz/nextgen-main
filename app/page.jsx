@@ -16,6 +16,9 @@ export const metadata = {
   title: "NextGen Business Consultancy | India’s Startup Growth Hub",
   description:
     "Your one-stop hub for Startup India, MSME support, tax exemptions, and investor connections. NextGen powers India’s startup growth journey.",
+    alternates: {
+    canonical: "https://www.nextgenbusiness.co.in/",
+  },
 
   openGraph: {
     title: "India’s Trusted Partner for Startup Success | NextGen Consultancy",

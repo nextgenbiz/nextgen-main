@@ -231,6 +231,14 @@ export default function Test() {
   };
 
   return (
+     <section className="w-full py-[30px] md:py-[60px] px-4 bg-white">
+      {/* Section Title */}
+        <div className="text-center mb-12 md:mb-20">
+          <h2 className="Vietnam-font font-semibold text-[#05325f] text-[28px] md:text-[35.62px]">
+            Real Experiences, Real Voices
+          </h2>
+        </div>
+
     <div className="relative w-full overflow-hidden  bg-white pb-[30px] md:pb-[30px]">
       <div className="flex justify-center items-center h-[400px] mb-5">
         {slides.map((slide, index) => (
@@ -305,7 +313,8 @@ export default function Test() {
           />
         </button>
         <Link
-          href={"/success-stories"}
+          href='https://www.youtube.com/@Next-Gen-business-consultancy'
+          target="_blank"
           className="text-[#1463b8] text-sm sm:text-base md:text-lg font-semibold border-[#1463b8] flex items-center hover:opacity-80 transition"
           style={{ transform: "translateY(0px)", opacity: 1 }}
         >
@@ -342,5 +351,6 @@ export default function Test() {
         </button>
       </div>
     </div>
+    </section>
   );
 }

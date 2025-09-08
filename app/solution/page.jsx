@@ -12,6 +12,9 @@ export const metadata = {
   title: "NextGen Services | Compliance, Funding & Growth for Startups & MSMEs",
   description:
     "From registrations to investor access – NextGen Business Consultancy services help businesses grow faster and stay compliant.",
+     alternates: {
+    canonical: "https://www.nextgenbusiness.co.in/solution",
+  },
 
   // Open Graph (Facebook, LinkedIn, WhatsApp, Slack, etc.)
   openGraph: {

@@ -13,6 +13,9 @@ export const metadata = {
   title: "NextGen Consultancy India | Trusted Startup Growth Partner",
   description:
     "Learn how NextGen Consultancy supports entrepreneurs with Startup India certification, MSME compliance, and strategic business growth.",
+    alternates: {
+    canonical: "https://www.nextgenbusiness.co.in/about",
+  },
 
   // Open Graph (Facebook, LinkedIn, WhatsApp, Slack, etc.)
   openGraph: {
