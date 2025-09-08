@@ -47,7 +47,7 @@ const steps = [
 
 export default function Timeline2() {
   return (
-    <section className="w-full bg-[linear-gradient(180deg,rgba(232,244,255,1)_0%,rgba(232,244,255,1)_100%)] py-[30px] md:py-[60px] px-[15px]">
+    <section className="w-full bg-[linear-gradient(180deg,rgba(232,244,255,1)_0%,rgba(232,244,255,1)_100%)] py-[30px] md:py-[60px] px-[15px] min-h-screen">
       <div className="mx-auto relative">
         {/* Header */}
         <div className="text-center  mb-10">
