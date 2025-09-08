@@ -40,7 +40,7 @@ export default function Test() {
         id: 2,
         src: "https://www.youtube.com/embed/m9Quda1uOmo",
         title: "Digital Marketing 2",
-        thumbnail: "https://img.youtube.com/vi/CH8jBkQk-DI/maxresdefault.jpg",
+        thumbnail: "https://img.youtube.com/vi/m9Quda1uOmo/maxresdefault.jpg",
       },
       // JIGNA PATLE
       {
@@ -48,69 +48,71 @@ export default function Test() {
         title: "Digital Marketing 3",
 
         src: "https://www.youtube.com/embed/Ljt18uURvBc",
-        thumbnail: "https://img.youtube.com/vi/CH8jBkQk-DI/maxresdefault.jpg",
+        thumbnail: "https://img.youtube.com/vi/Ljt18uURvBc/maxresdefault.jpg",
       },
       // black cap
       {
         id: 4,
-        src: "https://www.youtube.com/embed/UUAhosD26PM",
+        src: "https://www.youtube.com/embed/4pAlebkNPVg",
         title: "Digital Marketing 4",
-        thumbnail: "https://img.youtube.com/vi/CH8jBkQk-DI/maxresdefault.jpg",
+        thumbnail: "https://img.youtube.com/vi/4pAlebkNPVg/maxresdefault.jpg",
       },
-      {
-        id: 1,
+       {
+        id: 5,
         src: "https://www.youtube.com/embed/CH8jBkQk-DI",
         title: "Digital Marketing 1",
         thumbnail: "https://img.youtube.com/vi/CH8jBkQk-DI/maxresdefault.jpg",
       },
       {
-        id: 2,
+        id: 6,
         src: "https://www.youtube.com/embed/m9Quda1uOmo",
         title: "Digital Marketing 2",
-        thumbnail: "https://img.youtube.com/vi/CH8jBkQk-DI/maxresdefault.jpg",
+        thumbnail: "https://img.youtube.com/vi/m9Quda1uOmo/maxresdefault.jpg",
       },
       // JIGNA PATLE
       {
-        id: 3,
+        id: 7,
         title: "Digital Marketing 3",
 
         src: "https://www.youtube.com/embed/Ljt18uURvBc",
-        thumbnail: "https://img.youtube.com/vi/CH8jBkQk-DI/maxresdefault.jpg",
+        thumbnail: "https://img.youtube.com/vi/Ljt18uURvBc/maxresdefault.jpg",
       },
       // black cap
       {
-        id: 4,
-        src: "https://www.youtube.com/embed/UUAhosD26PM",
+        id: 8,
+        src: "https://www.youtube.com/embed/4pAlebkNPVg",
         title: "Digital Marketing 4",
-        thumbnail: "https://img.youtube.com/vi/CH8jBkQk-DI/maxresdefault.jpg",
+        thumbnail: "https://img.youtube.com/vi/4pAlebkNPVg/maxresdefault.jpg",
       },
       {
-        id: 1,
+        id: 9,
         src: "https://www.youtube.com/embed/CH8jBkQk-DI",
         title: "Digital Marketing 1",
         thumbnail: "https://img.youtube.com/vi/CH8jBkQk-DI/maxresdefault.jpg",
       },
       {
-        id: 2,
+        id: 10,
         src: "https://www.youtube.com/embed/m9Quda1uOmo",
         title: "Digital Marketing 2",
-        thumbnail: "https://img.youtube.com/vi/CH8jBkQk-DI/maxresdefault.jpg",
+        thumbnail: "https://img.youtube.com/vi/m9Quda1uOmo/maxresdefault.jpg",
       },
       // JIGNA PATLE
       {
-        id: 3,
+        id: 11,
         title: "Digital Marketing 3",
 
         src: "https://www.youtube.com/embed/Ljt18uURvBc",
-        thumbnail: "https://img.youtube.com/vi/CH8jBkQk-DI/maxresdefault.jpg",
+        thumbnail: "https://img.youtube.com/vi/Ljt18uURvBc/maxresdefault.jpg",
       },
       // black cap
       {
-        id: 4,
-        src: "https://www.youtube.com/embed/UUAhosD26PM",
+        id: 12,
+        src: "https://www.youtube.com/embed/4pAlebkNPVg",
         title: "Digital Marketing 4",
-        thumbnail: "https://img.youtube.com/vi/CH8jBkQk-DI/maxresdefault.jpg",
+        thumbnail: "https://img.youtube.com/vi/4pAlebkNPVg/maxresdefault.jpg",
       },
+      // black cap
+      
     ];
     setSlides(videoData);
     intervalRef.current = setInterval(() => {

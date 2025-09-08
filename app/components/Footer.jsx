@@ -18,9 +18,9 @@ export default function Footer() {
           together.
         </p>
 
-        <button className="bg-gradient-to-b from-[#2E6FB6] to-[#7BAEE0] text-white text-[15.97px] inter-font px-8 py-3 rounded-md transition-colors duration-300">
+        <a href='/contact' className="bg-gradient-to-b from-[#2E6FB6] to-[#7BAEE0] text-white text-[15.97px] inter-font px-8 py-3 rounded-md transition-colors duration-300">
           Contact Us
-        </button>
+        </a>
       </div>
 
       {/* Navigation and Social Section */}
