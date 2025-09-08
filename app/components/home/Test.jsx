@@ -4,6 +4,10 @@ import React, { useState, useEffect, useRef } from "react";
 
 import Image from "next/image";
 // import { FaArrowRight } from "react-icons/fa";
+
+import arrowleft from "../../assets/leftArrow.283cddef.svg";
+import arrowright from "../../assets/rightArrow.60ad53c6.svg";
+import ytimg from "../../assets/youtube-shorts-icon.d64f4fd5.svg";
 import Link from "next/link";
 
 const YouTubePlayButton = () => (
@@ -274,7 +278,7 @@ export default function Test() {
               >
                 <Image
                   src={
-                    "https://www.egniol.co.in/_next/static/media/youtube-shorts-icon.d64f4fd5.svg"
+                    ytimg
                   }
                   style={{ height: 80, width: 80 }}
                   width={80}
@@ -294,7 +298,7 @@ export default function Test() {
             width={30}
             height={30}
             src={
-              "https://www.egniol.co.in/_next/static/media/rightArrow.60ad53c6.svg"
+              arrowright
             }
             alt="Left Arrow"
             className="w-15 h-15 rotate-180"
@@ -330,7 +334,7 @@ export default function Test() {
             width={30}
             height={30}
             src={
-              "https://www.egniol.co.in/_next/static/media/leftArrow.283cddef.svg"
+              arrowleft
             }
             alt="Right Arrow"
             className="w-15 h-15 rotate-180"

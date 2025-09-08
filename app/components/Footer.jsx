@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 export default function Footer() {
   return (
-    <footer className="bg-[#05325F] text-white">
+    <footer className="bg-[#0E2845] text-white">
       {/* Main Content Section */}
       <div className="container mx-auto px-6 py-16 text-center max-w-7xl">
         <p className="vi text-[8px] md:text-[13px] opacity-[0.6] text-white uppercase mb-4 Vietnam-font">

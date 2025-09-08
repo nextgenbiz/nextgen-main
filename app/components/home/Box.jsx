@@ -16,10 +16,9 @@ const Box = () => {
       <div className="max-w-[1200px] mx-auto md:px-8">
         <div className=" overflow-hidden">
           <video
-            className="w-full md:w-[90%] h-full object-contain mx-auto "
+            className="w-full md:w-[90%] h-full object-contain mx-auto"
             src="/videos/Achieving_Business_Growth.mp4"
             autoPlay
-            loop
             muted
             playsInline
           />
