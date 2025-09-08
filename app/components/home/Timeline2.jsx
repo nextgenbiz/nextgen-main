@@ -113,7 +113,7 @@ export default function Timeline2() {
             <Image
               height={164}
               width={1403}
-              className="absolute w-3.5 h-[110vh] md:h-full top-[-25px] md:top-0 scale-[1] md:scale-[1.1] left-[32px] md:left-[110px] z-0"
+              className="absolute w-3.5 h-[725px] sm:h-full md:h-full top-[-25px] md:top-0 scale-[1] md:scale-[1.1] left-[32px] md:left-[110px] z-0"
               src="https://c.animaapp.com/metmcazsfuMR7v/img/line-14.svg"
               alt=""
             />
