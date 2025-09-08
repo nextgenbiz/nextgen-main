@@ -1,4 +1,4 @@
-import nodemailer from "nodemailer";
+export const runtime = "edge";
 
 export async function POST(req) {
   try {
@@ -14,37 +14,34 @@ export async function POST(req) {
       );
     }
 
-    // Check env vars
-    console.log("✅ SMTP_USER:", process.env.SMTP_USER);
-    console.log("✅ SMTP_PASS exists:", !!process.env.SMTP_PASS);
-
-    const transporter = nodemailer.createTransport({
-      host: "smtp.hostinger.com", // Hostinger SMTP server
-      port: 465, // or 587 if TLS
-      secure: true, // true for 465, false for 587
-      auth: {
-        user: process.env.SMTP_USER, // your Hostinger email (e.g. info@yourdomain.com)
-        pass: process.env.SMTP_PASS, // the password you set
+    // Send email using Resend API
+    const res = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
+        "Content-Type": "application/json",
       },
+      body: JSON.stringify({
+        from: "onboard@mailer.nextgenconsultancy.in", // must be verified in Resend
+        to: "aditya@nextgenbusiness.co.in",
+        subject: "New Contact Form Submission",
+        html: `
+          <h3>Contact Form Submission</h3>
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Mobile:</strong> ${mobile}</p>
+          <p><strong>Company:</strong> ${company || "N/A"}</p>
+          <p><strong>Email:</strong> ${email}</p>
+        `,
+      }),
     });
 
-    const info = await transporter.sendMail({
-      from: process.env.SMTP_USER,
-      to: "aditya@nextgenbusiness.co.in", // change this
-      subject: "New Contact Form Submission",
-      html: `
-        <h3>Contact Form Submission</h3>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Mobile:</strong> ${mobile}</p>
-        <p><strong>Company:</strong> ${company}</p>
-        <p><strong>Email:</strong> ${email}</p>
-      `,
-    });
-
-    console.log("✅ Email sent:", info.messageId);
+    if (!res.ok) {
+      const errorText = await res.text();
+      throw new Error(`Resend API error: ${res.status} - ${errorText}`);
+    }
 
     return new Response(
-      JSON.stringify({ message: "Email sent successfully!" }),
+      JSON.stringify({ message: "✅ Email sent successfully!" }),
       { status: 200 }
     );
   } catch (error) {
