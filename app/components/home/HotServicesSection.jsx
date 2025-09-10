@@ -87,13 +87,13 @@ export const HotServicesSection = () => {
                 </p>
 
                 {/* ₹5 CR centered */}
-                <h1
+                <h2
                   className="bebas-neue-regular bg-[linear-gradient(171deg,rgba(46,111,182,1)_0%,rgba(123,174,224,0.42)_100%)] 
                   [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] text-transparent 
                   font-['Bebas_Neue'] text-[60px] md:text-[130px] leading-none mt-1 mb-1"
                 >
                   {service.amount}
-                </h1>
+                </h2>
 
                 {/* Collateral Free Loans centered */}
                 <h3 className="font-medium text-[#46484f] text-[12px]  md:text-2xl mb-2 md:mb-6">

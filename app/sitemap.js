@@ -23,5 +23,13 @@ export default function sitemap() {
       url: `${baseUrl}/sitemap`,
       lastModified: new Date().toISOString(),
     },
+    {
+      url: `${baseUrl}/privacy-policy`,
+      lastModified: new Date().toISOString(),
+    },
+    {
+      url: `${baseUrl}/terms-condition`,
+      lastModified: new Date().toISOString(),
+    },
   ];
 }
