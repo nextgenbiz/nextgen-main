@@ -10,7 +10,7 @@ const Address = () => {
     {
       title: "Ahmedabad Office", 
       address: "Sadbhav Complex 41, Drive In Rd, Big Bazar, nr. Himalaya Mall Commercial Building, Ahmedabad, Gujarat 380052",
-      mapLink: "#"
+      mapLink: "https://maps.app.goo.gl/XBknnrCrgvUwQnwP7"
     },
     {
       title: "Surat Office",
