@@ -16,6 +16,11 @@ const Address = () => {
       title: "Surat Office",
       address: "9th Floor, APMC Krushi Bazaar, 901 to 910, Ring Rd, beside North Extension, Sahara Darwaja, Begampura, Surat, Gujarat 395003",
       mapLink: "#"
+    },
+    {
+      title: "Chennai Office",
+      address: "46, Fanepet 1st Street,Subbu Towers, 3rd Floor,Nandanam, Chennai – 600035",
+      mapLink: "#"
     }
   ];
 
@@ -23,9 +28,9 @@ const Address = () => {
     <section className="w-full py-12 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         {/* Office Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mb-12">
           {offices.map((office, index) => (
-            <div key={index} className="bg-gradient-to-b from-[#e8f4ff] to-[#e8f4ff] rounded-2xl shadow-lg border-2 border-blue-200 p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div key={index} className="bg-gradient-to-b from-[#e8f4ff] to-[#e8f4ff] rounded-2xl shadow-lg border-2 border-blue-200 p-4 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               {/* Map Pin Icon */}
               <div className="flex justify-center mb-6">
                 <div className="w-16 h-16 bg-gradient-to-b from-[#245586] to-[#76a5d3] rounded-full flex items-center justify-center">
