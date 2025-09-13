@@ -3,6 +3,18 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const metadata = {
+  title: "NEXT-GEN BUSINESS CONSULTANCY",
+  description:
+    "Your one-stop hub for Startup India, MSME support, tax exemptions, and investor connections.",
+  icons: {
+    icon: "/favicon.ico",                // Browser tab + Google
+    shortcut: "/favicon-32x32.png",      // Fallback
+    apple: "/apple-touch-icon.png",      // iOS Safari
+  },
+};
+
+
 export default function RootLayout({ children }) {
   const organizationSchema = {
     "@context": "https://schema.org",
